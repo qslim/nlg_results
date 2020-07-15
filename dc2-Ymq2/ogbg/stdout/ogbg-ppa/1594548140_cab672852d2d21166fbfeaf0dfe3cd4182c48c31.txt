@@ -1,0 +1,44 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 501, 'learning_rate': 0.0005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 512, 'pooling': 'mean', 'JK': 'sum', 'nonlinear_conv': 'CB', 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': 'cab672852d2d21166fbfeaf0dfe3cd4182c48c31', 'time_stamp': '1594548140', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Processing...
+Loading necessary files...
+This might take a while.
+Traceback (most recent call last):
+  File "./main.py", line 170, in <module>
+    main()
+  File "./main.py", line 85, in main
+    dataset = PygGraphPropPredDataset(name=config.dataset_name, transform=add_zeros)
+  File "/opt/conda/lib/python3.6/site-packages/ogb/graphproppred/dataset_pyg.py", line 43, in __init__
+    super(PygGraphPropPredDataset, self).__init__(self.root, transform, pre_transform)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/data/in_memory_dataset.py", line 54, in __init__
+    pre_filter)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/data/dataset.py", line 93, in __init__
+    self._process()
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/data/dataset.py", line 166, in _process
+    self.process()
+  File "/opt/conda/lib/python3.6/site-packages/ogb/graphproppred/dataset_pyg.py", line 104, in process
+    data_list = read_csv_graph_pyg(self.raw_dir, add_inverse_edge = add_inverse_edge, additional_node_files = additional_node_files, additional_edge_files = additional_edge_files)
+  File "/opt/conda/lib/python3.6/site-packages/ogb/io/read_graph_pyg.py", line 11, in read_csv_graph_pyg
+    graph_list = read_csv_graph_raw(raw_dir, add_inverse_edge, additional_node_files = additional_node_files, additional_edge_files = additional_edge_files)
+  File "/opt/conda/lib/python3.6/site-packages/ogb/io/read_graph_raw.py", line 48, in read_csv_graph_raw
+    edge_feat = pd.read_csv(osp.join(raw_dir, "edge-feat.csv.gz"), compression="gzip", header = None).values
+  File "/opt/conda/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/io/parsers.py", line 435, in _read
+    data = parser.read(nrows)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/io/parsers.py", line 1154, in read
+    df = DataFrame(col_dict, columns=columns, index=index)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/frame.py", line 392, in __init__
+    mgr = init_dict(data, index, columns, dtype=dtype)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/construction.py", line 212, in init_dict
+    return arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/construction.py", line 61, in arrays_to_mgr
+    return create_block_manager_from_arrays(arrays, arr_names, axes)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/managers.py", line 1666, in create_block_manager_from_arrays
+    blocks = form_blocks(arrays, names, axes)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/managers.py", line 1722, in form_blocks
+    float_blocks = _multi_blockify(items_dict['FloatBlock'])
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/managers.py", line 1819, in _multi_blockify
+    values, placement = _stack_arrays(list(tup_block), dtype)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/internals/managers.py", line 1861, in _stack_arrays
+    stacked = np.empty(shape, dtype=dtype)
+MemoryError: Unable to allocate array with shape (7, 358269822) and data type float64
