@@ -1,5 +1,0 @@
-{'dataset_name': 'QM9', 'target': 1, 'model': 'NLG_R', 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 801, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'CB', 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': '018c113d059a3089a28d45a5889953f828391aea', 'time_stamp': '1594430205', 'directory': '../../nlg_results/dc2-Ymq2/QM9_v1/board/'}
-Traceback (most recent call last):
-  File "./main.py", line 60, in <module>
-    path = osp.join(osp.dirname(osp.realpath(__file__)), '.', 'data', 'QM9')
-NameError: name 'osp' is not defined

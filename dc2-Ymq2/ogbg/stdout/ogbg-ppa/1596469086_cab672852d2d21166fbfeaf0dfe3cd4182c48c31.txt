@@ -1,0 +1,22 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 501, 'learning_rate': 0.0005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 1024, 'pooling': 'mean', 'JK': 'sum', 'nonlinear_conv': 'CB', 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': 'cab672852d2d21166fbfeaf0dfe3cd4182c48c31', 'time_stamp': '1596469086', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 170, in <module>
+    main()
+  File "./main.py", line 132, in main
+    train_loss = train(model, device, train_loader, optimizer)
+  File "./main.py", line 28, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/model.py", line 53, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 121, in forward
+    out = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 128, in message
+    aggr_emb = self.aggr_mlp(torch.cat([x_i, xe], dim=-1))
+RuntimeError: CUDA out of memory. Tried to allocate 1.27 GiB (GPU 0; 22.38 GiB total capacity; 18.78 GiB already allocated; 1.27 GiB free; 20.52 GiB reserved in total by PyTorch)

@@ -1,0 +1,14 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 501, 'learning_rate': 0.0005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 1024, 'pooling': 'mean', 'JK': 'sum', 'nonlinear_conv': 'CB', 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': 'cab672852d2d21166fbfeaf0dfe3cd4182c48c31', 'time_stamp': '1596468477', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Traceback (most recent call last):
+  File "./main.py", line 170, in <module>
+    main()
+  File "./main.py", line 85, in main
+    dataset = PygGraphPropPredDataset(name=config.dataset_name, transform=add_zeros)
+  File "/opt/conda/lib/python3.6/site-packages/ogb/graphproppred/dataset_pyg.py", line 45, in __init__
+    self.data, self.slices = torch.load(self.processed_paths[0])
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 593, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 780, in _legacy_load
+    deserialized_objects[key]._set_from_file(f, offset, f_should_read_directly)
+RuntimeError: unexpected EOF, expected 958260455 more bytes. The file might be corrupted.
+free(): corrupted unsorted chunks
