@@ -1,0 +1,16 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 501, 'learning_rate': 0.0005, 'step_size': 30, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'sum', 'JK': 'last', 'nonlinear_conv': 'EB4', 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': '7fc8367cdec3bf2dc0a14d786b7b652119bb2dfb', 'time_stamp': '1596855116', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 170, in <module>
+    main()
+  File "./main.py", line 132, in main
+    train_loss = train(model, device, train_loader, optimizer)
+  File "./main.py", line 28, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/model.py", line 59, in forward
+    h_graph = self.pool(nr, batched_data.batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 594, in __getattr__
+    type(self).__name__, name))
+AttributeError: 'NLG' object has no attribute 'pool'

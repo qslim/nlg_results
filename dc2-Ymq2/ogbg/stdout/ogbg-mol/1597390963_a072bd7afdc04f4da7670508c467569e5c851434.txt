@@ -1,0 +1,19 @@
+{'dataset_name': 'ogbg-molhiv', 'seed': 111, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 64, 'epochs': 251, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 3, 'hidden': 128, 'pooling': 'mean', 'JK': 'sum', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'N', 'aggr_mlp': 1, 'fea_activation': 'ReLU'}}, 'commit_id': 'a072bd7afdc04f4da7670508c467569e5c851434', 'time_stamp': '1597390963', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Traceback (most recent call last):
+  File "./main.py", line 175, in <module>
+    main()
+  File "./main.py", line 104, in main
+    model = NLG(config.architecture, num_tasks=dataset.num_tasks).to(device)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 443, in to
+    return self._apply(convert)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 203, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 203, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 203, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 225, in _apply
+    param_applied = fn(param)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 441, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
