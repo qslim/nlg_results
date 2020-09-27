@@ -1,0 +1,11 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 601, 'learning_rate': 0.0005, 'step_size': 30, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'N', 'fea_activation': 'ReLU'}}, 'commit_id': '7fc8367cdec3bf2dc0a14d786b7b652119bb2dfb', 'time_stamp': '1600441708', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Traceback (most recent call last):
+  File "./main.py", line 170, in <module>
+    main()
+  File "./main.py", line 102, in main
+    model = NLG(config.architecture, num_class=dataset.num_classes).to(device)
+  File "/space/github_private/gnnzoo/ogbg/ppa/model.py", line 25, in __init__
+    config.variants))
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 26, in __init__
+    if config.aggr_mlp == 1:
+AttributeError: 'EasyDict' object has no attribute 'aggr_mlp'
