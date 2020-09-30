@@ -1,0 +1,35 @@
+{'dataset_name': 'ogbg-code', 'seed': 777, 'num_workers': 0, 'feature': 'full', 'max_seq_len': 5, 'num_vocab': 5000, 'hyperparams': {'batch_size': 64, 'epochs': 46, 'learning_rate': 0.0001, 'step_size': 5, 'decay_rate': 0.6}, 'architecture': {'layers': 4, 'hidden': 512, 'pooling': 'mean', 'JK': 'cat', 'nonlinear_conv': 'CB', 'dropout': 0.5, 'variants': {'BN': 'Y', 'fea_activation': 'ReLU'}}, 'commit_id': 'b1e82dd32d1089453a2bcac386c86153ad3dd67b', 'time_stamp': '1601214310', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Target seqence less or equal to 5 is 0.9874166466036873%.
+Coverage of top 5000 vocabulary:
+0.9025832389087423
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 275, in <module>
+    main()
+  File "./main.py", line 232, in main
+    train_loss = train(model, device, train_loader, optimizer)
+  File "./main.py", line 42, in train
+    pred_list = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/code/model.py", line 77, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/code/conv.py", line 171, in forward
+    out = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/ogbg/code/conv.py", line 178, in message
+    aggr_emb = self.aggr_mlp(torch.cat([x_i, xe], dim=-1))
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 224.00 MiB (GPU 0; 11.78 GiB total capacity; 9.73 GiB already allocated; 61.69 MiB free; 10.63 GiB reserved in total by PyTorch)

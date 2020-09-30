@@ -1,0 +1,32 @@
+{'dataset_name': 'ogbg-ppa', 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0002, 'step_size': 20, 'decay_rate': 0.7}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'mean', 'JK': 'cat', 'nonlinear_conv': 'CB', 'dropout': 0.5, 'variants': {'BN': 'N', 'fea_activation': 'ReLU'}}, 'commit_id': 'b1e82dd32d1089453a2bcac386c86153ad3dd67b', 'time_stamp': '1600524876', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 171, in <module>
+    main()
+  File "./main.py", line 133, in main
+    train_loss = train(model, device, train_loader, optimizer)
+  File "./main.py", line 28, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/model.py", line 64, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 168, in forward
+    out = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 176, in message
+    return self.fea_mlp(aggr_emb * xe)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 296.00 MiB (GPU 0; 11.78 GiB total capacity; 10.18 GiB already allocated; 267.69 MiB free; 10.46 GiB reserved in total by PyTorch)
