@@ -1,0 +1,16 @@
+{'dataset_name': 'ogbg-molpcba', 'virtual_node': 'Y', 'seed': 555, 'num_workers': 0, 'feature': 'full', 'hyperparams': {'batch_size': 128, 'epochs': 501, 'learning_rate': 0.0001, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 5, 'hidden': 512, 'pooling': 'mean', 'JK': 'cat', 'nonlinear_conv': 'EB5', 'dropout': 0.5, 'variants': {'BN': 'Y', 'fea_activation': 'ReLU'}}, 'commit_id': '0fb07c0a3e73b3911c4c5e19f72c3088fe2afb66', 'time_stamp': '1602088226', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 179, in <module>
+    main()
+  File "./main.py", line 140, in main
+    train_loss = train(model, device, train_loader, optimizer, dataset.task_type)
+  File "./main.py", line 28, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/mol/model.py", line 160, in forward
+    self.drop_ratio, training=self.training)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 594, in __getattr__
+    type(self).__name__, name))
+AttributeError: 'NLG_virtualnode' object has no attribute 'drop_ratio'
