@@ -1,0 +1,15 @@
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': './checkpoint', 'num_workers': 1, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 601, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'Y', 'fea_activation': 'ReLU'}}, 'commit_id': 'cd0c964e80fcfd3e96244b42aeefabc8568d613b', 'time_stamp': '1603422249', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Evaluating...
+Train: 0.10225063938618925 Validation: 0.10625277161862527 Test: 0.13485632183908047 Train loss: 19.03773723901196 lr: 0.0005
+Saving model as cd0c964_1603422249_ogbg-ppa_1.tar... Model saved.
+Epoch 2 training...
+Evaluating...
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/multiprocessing/queues.py", line 234, in _feed
+    obj = _ForkingPickler.dumps(obj)
+  File "/opt/conda/lib/python3.6/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+  File "/opt/conda/lib/python3.6/site-packages/torch/multiprocessing/reductions.py", line 333, in reduce_storage
+    fd, size = storage._share_fd_()
+RuntimeError: unable to write to file </torch_1891_2664456473>
