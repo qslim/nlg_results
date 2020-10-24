@@ -1,0 +1,63 @@
+{'dataset_name': 'ogbg-ppa', 'resume_train': './checkpoint/7e9542b_1603459604_ogbg-ppa_0.tar', 'checkpoint_dir': './checkpoint', 'num_workers': 1, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 601, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'Y', 'fea_activation': 'ReLU'}}, 'commit_id': '7e9542b0240da82fdde9245560aa88b8587e9a98', 'time_stamp': '1603492812', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Loading model from ./checkpoint/7e9542b_1603459604_ogbg-ppa_0.tar... Model loaded.
+Epoch 54 evaluating...
+Train: 0.9826982097186701 Validation: 0.6971175166297118 Test: 0.7496551724137931 Train loss: 0.10759579812050012 lr: 0.00032
+Epoch 55 training...
+Evaluating...
+Train: 0.9878644501278773 Validation: 0.7082039911308204 Test: 0.7660344827586207 Train loss: 0.10234613156894225 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_1.tar... Model saved.
+Epoch 56 training...
+Evaluating...
+Train: 0.9854987212276215 Validation: 0.7004434589800443 Test: 0.7522413793103448 Train loss: 0.10349868195292992 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_0.tar... Model saved.
+Epoch 57 training...
+Evaluating...
+Train: 0.9875447570332481 Validation: 0.7059423503325942 Test: 0.760603448275862 Train loss: 0.10494440300131 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_1.tar... Model saved.
+Epoch 58 training...
+Evaluating...
+Train: 0.9844757033248082 Validation: 0.6952328159645232 Test: 0.7522126436781609 Train loss: 0.09264495431669605 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_0.tar... Model saved.
+Epoch 59 training...
+Evaluating...
+Train: 0.9848721227621483 Validation: 0.7016851441241685 Test: 0.7477298850574713 Train loss: 0.10408731160072668 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_1.tar... Model saved.
+Epoch 60 training...
+Evaluating...
+Train: 0.984769820971867 Validation: 0.700820399113082 Test: 0.7554885057471264 Train loss: 0.09278939504011759 lr: 0.00032
+Saving model as 7e9542b_1603492812_ogbg-ppa_0.tar... Model saved.
+Epoch 61 training...
+Evaluating...
+Train: 0.9917519181585678 Validation: 0.7168514412416851 Test: 0.7658045977011494 Train loss: 0.07355293852571282 lr: 0.00025600000000000004
+Saving model as 7e9542b_1603492812_ogbg-ppa_1.tar... Model saved.
+Epoch 62 training...
+Traceback (most recent call last):
+  File "./main.py", line 230, in <module>
+    main()
+  File "./main.py", line 172, in main
+    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
+  File "./main.py", line 27, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/model.py", line 58, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 40, in forward
+    out = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 50, in message
+    return self.fea_mlp(feature2d)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 216.00 MiB (GPU 0; 11.78 GiB total capacity; 9.20 GiB already allocated; 33.69 MiB free; 10.66 GiB reserved in total by PyTorch)
