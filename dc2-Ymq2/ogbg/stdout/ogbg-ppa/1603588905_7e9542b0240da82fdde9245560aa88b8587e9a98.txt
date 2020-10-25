@@ -60,3 +60,49 @@ Evaluating...
 Train: 0.8692710997442455 Validation: 0.6666075388026608 Test: 0.6998275862068966 Train loss: 0.8286027003799104 lr: 0.0005
 Saving model as 7e9542b_1603588905_ogbg-ppa_1.tar... Model saved.
 Epoch 16 training...
+Evaluating...
+Train: 0.8858951406649617 Validation: 0.6678048780487805 Test: 0.7091091954022989 Train loss: 0.6913149332484374 lr: 0.0005
+Saving model as 7e9542b_1603588905_ogbg-ppa_0.tar... Model saved.
+Epoch 17 training...
+Evaluating...
+Train: 0.883618925831202 Validation: 0.6791130820399113 Test: 0.7066954022988505 Train loss: 0.6174049556999179 lr: 0.0005
+Saving model as 7e9542b_1603588905_ogbg-ppa_1.tar... Model saved.
+Epoch 18 training...
+Evaluating...
+Train: 0.884386189258312 Validation: 0.669490022172949 Test: 0.7013505747126437 Train loss: 0.6174558587067451 lr: 0.0005
+Saving model as 7e9542b_1603588905_ogbg-ppa_0.tar... Model saved.
+Epoch 19 training...
+Evaluating...
+Traceback (most recent call last):
+  File "./main.py", line 230, in <module>
+  File "./main.py", line 178, in main
+    valid_perf = eval(model, device, valid_loader, evaluator)
+  File "./main.py", line 44, in eval
+    for step, batch in enumerate(loader):
+  File "/opt/conda/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 841, in _next_data
+    idx, data = self._get_data()
+  File "/opt/conda/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 808, in _get_data
+    success, data = self._try_get_data()
+  File "/opt/conda/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 761, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/opt/conda/lib/python3.6/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/opt/conda/lib/python3.6/site-packages/torch/multiprocessing/reductions.py", line 294, in rebuild_storage_fd
+    fd = df.detach()
+  File "/opt/conda/lib/python3.6/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/opt/conda/lib/python3.6/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 493, in Client
+    answer_challenge(c, authkey)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 732, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
