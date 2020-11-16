@@ -1,0 +1,4 @@
+{'dataset_name': 'COLLAB', 'num_workers': 0, 'hyperparams': {'batch_size': 64, 'epochs': 201, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.7}, 'architecture': {'layers': 3, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'CB', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': '9c82d98405370127a3f5465c3b0f11a933b0e688', 'time_stamp': '1605527333', 'directory': '../../nlg_results/tu/board/'}
+Downloading http://ls11-www.cs.tu-dortmund.de/people/morris/graphkerneldatasets/COLLAB.zip
+Extracting /GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/data/COLLAB/COLLAB/COLLAB.zip
+Processing...

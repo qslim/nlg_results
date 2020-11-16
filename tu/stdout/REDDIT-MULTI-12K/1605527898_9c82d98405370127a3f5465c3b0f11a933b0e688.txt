@@ -1,0 +1,2 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'num_workers': 0, 'hyperparams': {'batch_size': 64, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 20, 'decay_rate': 0.7}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': '9c82d98405370127a3f5465c3b0f11a933b0e688', 'time_stamp': '1605527898', 'directory': '../../nlg_results/tu/board/'}
+Downloading http://ls11-www.cs.tu-dortmund.de/people/morris/graphkerneldatasets/REDDIT-MULTI-12K.zip

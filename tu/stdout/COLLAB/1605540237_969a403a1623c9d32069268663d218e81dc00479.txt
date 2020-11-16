@@ -1,0 +1,22 @@
+{'dataset_name': 'COLLAB', 'num_workers': 1, 'hyperparams': {'batch_size': 32, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 20, 'decay_rate': 0.7}, 'architecture': {'layers': 3, 'hidden': 200, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'N'}}, 'commit_id': '969a403a1623c9d32069268663d218e81dc00479', 'time_stamp': '1605540237', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=969a403a1623c9d32069268663d218e81dc00479
+Epoch: 001, Train Loss: 7968.7367539, Train Acc: 0.6955556, Test Acc: 0.6940000
+Epoch: 002, Train Loss: 2.7823269, Train Acc: 0.7093333, Test Acc: 0.7320000
+Epoch: 003, Train Loss: 0.8440426, Train Acc: 0.7491111, Test Acc: 0.7700000
+Epoch: 004, Train Loss: 0.8894753, Train Acc: 0.7386667, Test Acc: 0.7480000
+Epoch: 005, Train Loss: 0.6396773, Train Acc: 0.7551111, Test Acc: 0.7600000
+Epoch: 006, Train Loss: 0.5864328, Train Acc: 0.7417778, Test Acc: 0.7580000
+Epoch: 007, Train Loss: 0.5660815, Train Acc: 0.7551111, Test Acc: 0.7780000
+Epoch: 008, Train Loss: 0.5714894, Train Acc: 0.7531111, Test Acc: 0.7800000
+Epoch: 009, Train Loss: 0.5627646, Train Acc: 0.7500000, Test Acc: 0.7580000
+Epoch: 010, Train Loss: 0.5604131, Train Acc: 0.7411111, Test Acc: 0.7540000
+Epoch: 011, Train Loss: 0.5610164, Train Acc: 0.7455556, Test Acc: 0.7600000
+Epoch: 012, Train Loss: 0.5740523, Train Acc: 0.7515556, Test Acc: 0.7720000
+Epoch: 013, Train Loss: 0.5559690, Train Acc: 0.7271111, Test Acc: 0.7440000
+Epoch: 014, Train Loss: 0.5547786, Train Acc: 0.7502222, Test Acc: 0.7780000
+Epoch: 015, Train Loss: 0.5645439, Train Acc: 0.7600000, Test Acc: 0.7640000
+Epoch: 016, Train Loss: 0.6970243, Train Acc: 0.6571111, Test Acc: 0.6340000
+Epoch: 017, Train Loss: 2892.7414832, Train Acc: 0.6342222, Test Acc: 0.6040000
+Epoch: 018, Train Loss: 1.0226144, Train Acc: 0.6482222, Test Acc: 0.6160000
+Epoch: 019, Train Loss: 0.7636386, Train Acc: 0.6604444, Test Acc: 0.6540000
+Epoch: 020, Train Loss: 0.7057768, Train Acc: 0.6573333, Test Acc: 0.6440000
