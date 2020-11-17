@@ -1,0 +1,3 @@
+{'dataset_name': 'QM9', 'target': 0, 'model': 'NLG_R', 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'GAT16', 'variants': {'BN': 'N', 'fea_activation': 'ReLU'}}, 'commit_id': 'f31fd744d8442bca15354c908cabd51fa30b82c3', 'time_stamp': '1605362335', 'directory': '../../nlg_results/titanv/QM9/board/'}
+--------
+QM9_0, 1605362335_f31fd74_GAT16_ReLU_add_cat_4_256_N_0.0001_30_0.85_B64_S777, ID=f31fd744d8442bca15354c908cabd51fa30b82c3

@@ -1,0 +1,18 @@
+{'dataset_name': 'QM9', 'target': 9, 'model': 'NLG_R', 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'GAT8', 'variants': {'BN': 'N', 'fea_activation': 'ReLU'}}, 'commit_id': 'f31fd744d8442bca15354c908cabd51fa30b82c3', 'time_stamp': '1605419852', 'directory': '../../nlg_results/titanv/QM9/board/'}
+--------
+QM9_9, 1605419852_f31fd74_GAT8_ReLU_add_cat_4_256_N_0.0001_30_0.85_B64_S777, ID=f31fd744d8442bca15354c908cabd51fa30b82c3
+Epoch: 001, LR: 0.000100, Loss: 0.1657245, Validation MAE: 5.5799489, Test MAE: 5.5715960
+Epoch: 002, LR: 0.000100, Loss: 0.0075574, Validation MAE: 3.7277683, Test MAE: 3.7139067
+Epoch: 003, LR: 0.000100, Loss: 0.0057972, Validation MAE: 1.4894567, Test MAE: 1.4908603
+Epoch: 004, 0.000100,0.0047706,1.5398140,1.5240246
+Epoch: 005, LR: 0.000100, Loss: 0.0041419, Validation MAE: 1.1923751, Test MAE: 1.2012780
+Epoch: 006, LR: 0.000100, Loss: 0.0031513, Validation MAE: 1.0074501, Test MAE: 1.0120214
+Epoch: 007, LR: 0.000100, Loss: 0.0028965, Validation MAE: 0.8952491, Test MAE: 0.8992398
+Epoch: 008, LR: 0.000100, Loss: 0.0026176, Validation MAE: 0.6460107, Test MAE: 0.6493913
+Epoch: 009, 0.000100,0.0024015,0.9010807,0.9082326
+Epoch: 010, 0.000100,0.0022677,1.8597484,1.8450641
+Epoch: 011, 0.000100,0.0020449,2.4861610,2.5064270
+Epoch: 012, LR: 0.000100, Loss: 0.0021523, Validation MAE: 0.3536569, Test MAE: 0.3446755
+Epoch: 013, 0.000100,0.0017620,0.4617903,0.4612598
+Epoch: 014, 0.000100,0.0017030,1.0555427,1.0454031
+Epoch: 015, 0.000100,0.0015462,0.6500689,0.6448508
