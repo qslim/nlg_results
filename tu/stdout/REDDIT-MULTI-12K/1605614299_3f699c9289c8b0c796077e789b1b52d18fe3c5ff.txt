@@ -1,0 +1,24 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'num_workers': 1, 'hyperparams': {'batch_size': 32, 'epochs': 401, 'learning_rate': 0.001, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB3', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': '3f699c9289c8b0c796077e789b1b52d18fe3c5ff', 'time_stamp': '1605614299', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=3f699c9289c8b0c796077e789b1b52d18fe3c5ff
+Traceback (most recent call last):
+  File "./main.py", line 260, in <module>
+    main()
+  File "./main.py", line 256, in main
+    run_model(NLG, dataset, config=config)
+  File "./main.py", line 186, in run_model
+    config=config
+  File "./main.py", line 101, in run_given_fold
+    train_loss = train(train_loader, model, optimizer)
+  File "./main.py", line 65, in train
+    output = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/model.py", line 62, in forward
+    x = self.lin0(x)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 16.00 MiB (GPU 0; 15.75 GiB total capacity; 5.78 MiB already allocated; 7.88 MiB free; 6.00 MiB reserved in total by PyTorch)

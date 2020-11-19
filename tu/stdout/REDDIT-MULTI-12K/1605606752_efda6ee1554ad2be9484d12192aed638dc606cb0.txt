@@ -1,0 +1,26 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'num_workers': 1, 'hyperparams': {'batch_size': 64, 'epochs': 401, 'learning_rate': 0.001, 'step_size': 10, 'decay_rate': 0.8}, 'architecture': {'layers': 3, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'EB2', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'efda6ee1554ad2be9484d12192aed638dc606cb0', 'time_stamp': '1605606752', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=efda6ee1554ad2be9484d12192aed638dc606cb0
+Traceback (most recent call last):
+  File "./main.py", line 260, in <module>
+    main()
+  File "./main.py", line 256, in main
+    run_model(NLG, dataset, config=config)
+  File "./main.py", line 186, in run_model
+    config=config
+  File "./main.py", line 101, in run_given_fold
+    train_loss = train(train_loader, model, optimizer)
+  File "./main.py", line 65, in train
+    output = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/model.py", line 61, in forward
+    x = conv(x, edge_index)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 33, in forward
+    out = self.propagate(edge_index, x=x)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 42, in message
+    .transpose(-1, -2)).squeeze(-1).view(-1, self.hidden * self.num_aggr)
+RuntimeError: CUDA out of memory. Tried to allocate 130.00 MiB (GPU 0; 15.75 GiB total capacity; 1.02 GiB already allocated; 83.62 MiB free; 1.07 GiB reserved in total by PyTorch)
