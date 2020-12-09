@@ -1,0 +1,22 @@
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': './checkpoint', 'num_workers': 2, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.7}, 'architecture': {'layers': 3, 'hidden': 200, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'GAT4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': '3f699c9289c8b0c796077e789b1b52d18fe3c5ff', 'time_stamp': '1606123954', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 231, in <module>
+    main()
+  File "./main.py", line 173, in main
+    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
+  File "./main.py", line 28, in train
+    pred = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/model.py", line 63, in forward
+    x = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 298, in forward
+    return F.relu(self.propagate(edge_index, edge_attr=edge_attr, size=size, x=x))
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 308, in message
+    alpha = (torch.cat([x_i, x_j], dim=-1) * self.att).sum(dim=-1)
+RuntimeError: CUDA out of memory. Tried to allocate 1.02 GiB (GPU 0; 15.75 GiB total capacity; 4.70 GiB already allocated; 8.51 GiB free; 6.17 GiB reserved in total by PyTorch)
