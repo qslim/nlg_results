@@ -1,0 +1,5 @@
+{'dataset_name': 'QM9', 'target': 0, 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 5, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'PcaEB8', 'variants': {'BN': 'N', 'fea_activation': 'ReLU'}}, 'commit_id': 'b5ad1b4f085f8e69d4ba9cdb0fe1e046b775f814', 'time_stamp': '1607854668', 'directory': '../../nlg_results/titanv/QM9/board/'}
+--------
+QM9_0, 1607854668_b5ad1b4_PcaEB8_ReLU_add_cat_5_256_N_0.0001_30_0.85_B64_S777, ID=b5ad1b4f085f8e69d4ba9cdb0fe1e046b775f814
+Epoch: 001, LR: 0.000100, Loss: 0.0370893, Validation MAE: 0.7655925, Test MAE: 0.7768128
+Epoch: 002, LR: 0.000100, Loss: 0.0150245, Validation MAE: 0.6907477, Test MAE: 0.6973949
