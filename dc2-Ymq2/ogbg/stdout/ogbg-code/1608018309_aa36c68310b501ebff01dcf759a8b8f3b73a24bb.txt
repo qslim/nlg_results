@@ -1,0 +1,7 @@
+{'dataset_name': 'ogbg-code', 'num_workers': 0, 'feature': 'full', 'max_seq_len': 5, 'num_vocab': 5000, 'hyperparams': {'batch_size': 32, 'epochs': 101, 'learning_rate': 0.0001, 'step_size': 5, 'decay_rate': 0.6}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'mean', 'JK': 'last', 'nonlinear_conv': 'EB4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'aa36c68310b501ebff01dcf759a8b8f3b73a24bb', 'time_stamp': '1608018309', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Target seqence less or equal to 5 is 0.9874166466036873%.
+Coverage of top 5000 vocabulary:
+0.9025832389087423
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10344898
+Epoch 1 training...
