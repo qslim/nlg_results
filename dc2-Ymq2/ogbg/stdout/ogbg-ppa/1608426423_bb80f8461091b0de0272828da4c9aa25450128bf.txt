@@ -1,0 +1,3 @@
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': './checkpoint', 'resume_train': './checkpoint/bb80f84_1608386658_ogbg-ppa_0.tar', 'num_workers': 2, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 230, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'STB4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'bb80f8461091b0de0272828da4c9aa25450128bf', 'time_stamp': '1608426423', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Loading model from ./checkpoint/bb80f84_1608386658_ogbg-ppa_0.tar... Model loaded.
+Epoch 20 evaluating...
