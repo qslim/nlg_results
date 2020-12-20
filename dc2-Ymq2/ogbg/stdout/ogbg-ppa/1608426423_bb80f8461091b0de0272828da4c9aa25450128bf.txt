@@ -1,3 +1,49 @@
 {'dataset_name': 'ogbg-ppa', 'checkpoint_dir': './checkpoint', 'resume_train': './checkpoint/bb80f84_1608386658_ogbg-ppa_0.tar', 'num_workers': 2, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 230, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'STB4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'bb80f8461091b0de0272828da4c9aa25450128bf', 'time_stamp': '1608426423', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
 Loading model from ./checkpoint/bb80f84_1608386658_ogbg-ppa_0.tar... Model loaded.
 Epoch 20 evaluating...
+Train: 0.9394117647058824 Validation: 0.6983148558758315 Test: 0.7391666666666666 Train loss: 7.040368569111021e-06 lr: 0.0005
+Epoch 21 training...
+Evaluating...
+Train: 0.9357800511508951 Validation: 0.6944345898004435 Test: 0.7375 Train loss: 3.4125999302137637e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_1.tar... Model saved.
+Epoch 22 training...
+Evaluating...
+Train: 0.9417391304347826 Validation: 0.7042572062084257 Test: 0.7443390804597702 Train loss: 2.9974654172009966e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_0.tar... Model saved.
+Epoch 23 training...
+Evaluating...
+Train: 0.935537084398977 Validation: 0.6941241685144124 Test: 0.7227873563218391 Train loss: 2.4166863276140287e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_1.tar... Model saved.
+Epoch 24 training...
+Evaluating...
+Train: 0.947237851662404 Validation: 0.6939024390243902 Test: 0.7357471264367816 Train loss: 2.06059350718924e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_0.tar... Model saved.
+Epoch 25 training...
+Evaluating...
+Train: 0.9517902813299233 Validation: 0.6911973392461197 Test: 0.7308045977011495 Train loss: 1.995629719775823e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_1.tar... Model saved.
+Epoch 26 training...
+Evaluating...
+Train: 0.9501790281329924 Validation: 0.694589800443459 Test: 0.7331609195402299 Train loss: 1.7913582097487657e-06 lr: 0.0004
+Saving model as bb80f84_1608426423_ogbg-ppa_0.tar... Model saved.
+Epoch 27 training...
+Traceback (most recent call last):
+  File "./main.py", line 240, in <module>
+    main()
+  File "./main.py", line 182, in main
+    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
+  File "./main.py", line 29, in train
+    pred, std = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/model.py", line 51, in forward
+    x, std, cov = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 38, in forward
+    out, std, cov = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 48, in message
+    return torch.cat([self.fea_mlp(feature2d), feature2d], dim=-1)
+RuntimeError: CUDA out of memory. Tried to allocate 952.00 MiB (GPU 0; 15.75 GiB total capacity; 10.43 GiB already allocated; 574.62 MiB free; 14.09 GiB reserved in total by PyTorch)
