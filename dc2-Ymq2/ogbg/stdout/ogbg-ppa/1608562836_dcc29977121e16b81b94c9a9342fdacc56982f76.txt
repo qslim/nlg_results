@@ -1,0 +1,58 @@
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': './checkpoint', 'num_workers': 2, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 20, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 230, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'STB4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'dcc29977121e16b81b94c9a9342fdacc56982f76', 'time_stamp': '1608562836', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Evaluating...
+Train: 0.12069053708439897 Validation: 0.10527716186252771 Test: 0.12344827586206897 Train loss: 16.754862226948216 Train cov: 3.811870407275633e-05 lr: 0.0005
+Saving model as dcc2997_1608562836_ogbg-ppa_1.tar... Model saved.
+Epoch 2 training...
+Evaluating...
+Train: 0.3065728900255755 Validation: 0.24478935698447893 Test: 0.2721264367816092 Train loss: 6.254284259876916 Train cov: 4.1995825126840084e-05 lr: 0.0005
+Saving model as dcc2997_1608562836_ogbg-ppa_0.tar... Model saved.
+Epoch 3 training...
+Evaluating...
+Train: 0.389539641943734 Validation: 0.32787139689578715 Test: 0.3807183908045977 Train loss: 3.791985501536761 Train cov: 3.790507215371437e-05 lr: 0.0005
+Saving model as dcc2997_1608562836_ogbg-ppa_1.tar... Model saved.
+Epoch 4 training...
+Evaluating...
+Train: 0.5732864450127877 Validation: 0.4702882483370288 Test: 0.5025287356321839 Train loss: 2.334906776998125 Train cov: 2.5219901669579828e-05 lr: 0.0005
+Saving model as dcc2997_1608562836_ogbg-ppa_0.tar... Model saved.
+Epoch 5 training...
+Evaluating...
+Train: 0.6315984654731458 Validation: 0.5222394678492239 Test: 0.5528735632183908 Train loss: 1.8471317362473172 Train cov: 2.747804217032846e-05 lr: 0.0005
+Saving model as dcc2997_1608562836_ogbg-ppa_1.tar... Model saved.
+Epoch 6 training...
+Traceback (most recent call last):
+  File "./main.py", line 245, in <module>
+    main()
+  File "./main.py", line 185, in main
+    train_loss, train_cov = train(model, device, train_loader, optimizer, multicls_criterion)
+  File "./main.py", line 44, in train
+    loss.backward()
+  File "/opt/conda/lib/python3.6/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/lib/python3.6/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 772.00 MiB (GPU 0; 15.75 GiB total capacity; 10.20 GiB already allocated; 326.62 MiB free; 14.34 GiB reserved in total by PyTorch) (malloc at /pytorch/c10/cuda/CUDACachingAllocator.cpp:289)
+frame #0: c10::Error::Error(c10::SourceLocation, std::string const&) + 0x46 (0x2b700c5c7536 in /opt/conda/lib/python3.6/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x1cf1e (0x2b700c387f1e in /opt/conda/lib/python3.6/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x1df9e (0x2b700c388f9e in /opt/conda/lib/python3.6/site-packages/torch/lib/libc10_cuda.so)
+frame #3: THCStorage_resize + 0x96 (0x2b6fd0bbb3d6 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: at::native::(anonymous namespace)::resize_cuda_(at::Tensor&, c10::ArrayRef<long>, c10::optional<c10::MemoryFormat>) + 0x9aa (0x2b6fd23dee4a in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x2887de3 (0x2b6fd23dfde3 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0xf0ffe2 (0x2b6fd0a67fe2 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x1041be6 (0x2b6fd0b99be6 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0xf65018 (0x2b6fd0abd018 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: <unknown function> + 0x10c2780 (0x2b6fc1e7e780 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #10: <unknown function> + 0x2c9b47e (0x2b6fc3a5747e in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: <unknown function> + 0x10c2780 (0x2b6fc1e7e780 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #12: at::Tensor c10::Dispatcher::callUnboxed<at::Tensor, at::Tensor const&, at::Tensor const&>(c10::OperatorHandle const&, at::Tensor const&, at::Tensor const&) const + 0xb3 (0x2b6fbfd05da3 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+frame #13: <unknown function> + 0x28ac327 (0x2b6fc3668327 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: torch::autograd::generated::AddmmBackward::apply(std::vector<at::Tensor, std::allocator<at::Tensor> >&&) + 0x134 (0x2b6fc36a2ff4 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2d89705 (0x2b6fc3b45705 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: torch::autograd::Engine::evaluate_function(std::shared_ptr<torch::autograd::GraphTask>&, torch::autograd::Node*, torch::autograd::InputBuffer&) + 0x16f3 (0x2b6fc3b42a03 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: torch::autograd::Engine::thread_main(std::shared_ptr<torch::autograd::GraphTask> const&, bool) + 0x3d2 (0x2b6fc3b437e2 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: torch::autograd::Engine::thread_init(int) + 0x39 (0x2b6fc3b3be59 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: torch::autograd::python::PythonEngine::thread_init(int) + 0x38 (0x2b6fbffc95f8 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+frame #20: <unknown function> + 0xbd66f (0x2b6fbf3d366f in /usr/lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #21: <unknown function> + 0x76db (0x2b6fbd17a6db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #22: clone + 0x3f (0x2b6fbd4b388f in /lib/x86_64-linux-gnu/libc.so.6)
+
