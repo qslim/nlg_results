@@ -1,0 +1,9 @@
+{'dataset_name': 'QM9', 'target': 5, 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'NNC2', 'variants': {'BN': 'N'}}, 'commit_id': '59057c774960df09360b56727b62da3a701f1b5e', 'time_stamp': '1609930555', 'directory': '../../nlg_results/titanv/QM9/board/'}
+--------
+QM9_5, 1609930555_59057c7_NNC2_add_cat_4_256_N_0.0001_30_0.85_B64_S777, ID=59057c774960df09360b56727b62da3a701f1b5e
+Epoch: 001, LR: 0.000100, Loss: 0.3261625, Validation MAE: 73.1746238, Test MAE: 71.9141799, Cov: 0.4091415
+Epoch: 002, LR: 0.000100, Loss: 0.1432647, Validation MAE: 62.2582451, Test MAE: 61.0917289, Cov: 0.4039155
+Epoch: 003, LR: 0.000100, Loss: 0.1114197, Validation MAE: 57.7716773, Test MAE: 57.3711694, Cov: 0.3979886
+Epoch: 004, 0.000100,0.0936736,83.3770875,81.9557442, 0.3937352
+Epoch: 005, LR: 0.000100, Loss: 0.0812529, Validation MAE: 47.6257911, Test MAE: 47.2242168, Cov: 0.3854828
+Epoch: 006, LR: 0.000100, Loss: 0.0721573, Validation MAE: 44.0226751, Test MAE: 43.8247621, Cov: 0.3787831
