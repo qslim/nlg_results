@@ -1,0 +1,372 @@
+{'dataset_name': 'QM9', 'target': 5, 'seed': 777, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'NNB1', 'variants': {'BN': 'N'}}, 'commit_id': 'ea302783196709975ad28ef0895268a116034922', 'time_stamp': '1609905725', 'directory': '../../nlg_results/titanv/QM9/board/'}
+--------
+QM9_5, 1609905725_ea30278_NNB1_add_cat_4_256_N_0.0001_30_0.85_B64_S777, ID=ea302783196709975ad28ef0895268a116034922
+Epoch: 001, LR: 0.000100, Loss: 0.3181024, Validation MAE: 76.4457875, Test MAE: 75.9559180, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 002, LR: 0.000100, Loss: 0.1545071, Validation MAE: 59.7023348, Test MAE: 59.7832111, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 003, 0.000100,0.1237488,63.9798340,63.1438832, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 004, LR: 0.000100, Loss: 0.1065774, Validation MAE: 54.8657424, Test MAE: 54.6435359, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 005, 0.000100,0.0928066,58.7439242,58.3810440, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 006, LR: 0.000100, Loss: 0.0844914, Validation MAE: 48.7487705, Test MAE: 48.5069021, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 007, 0.000100,0.0842313,49.7525078,49.2632752, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 008, 0.000100,0.0685349,56.6217593,56.1281044, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 009, LR: 0.000100, Loss: 0.0658381, Validation MAE: 41.9410803, Test MAE: 41.7042550, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 010, LR: 0.000100, Loss: 0.0589779, Validation MAE: 41.2660160, Test MAE: 40.3666036, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 011, LR: 0.000100, Loss: 0.0560261, Validation MAE: 37.7545224, Test MAE: 37.5989604, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 012, 0.000100,0.0537905,42.3559019,41.6489045, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 013, 0.000100,0.0496392,42.3456856,41.7743535, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 014, 0.000100,0.0477369,51.3837027,51.1246210, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 015, LR: 0.000100, Loss: 0.0455327, Validation MAE: 36.1714374, Test MAE: 36.3086660, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 016, LR: 0.000100, Loss: 0.0425278, Validation MAE: 36.1118456, Test MAE: 36.0797605, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 017, 0.000100,0.0397441,36.7449065,36.2404793, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 018, 0.000100,0.0389252,38.4168019,37.4932025, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 019, 0.000100,0.0376836,37.4490559,37.5345796, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 020, LR: 0.000100, Loss: 0.0360273, Validation MAE: 35.3119761, Test MAE: 35.0437150, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 021, LR: 0.000100, Loss: 0.0356681, Validation MAE: 32.0204464, Test MAE: 32.3139023, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 022, 0.000100,0.0340058,33.8260944,33.6620365, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 023, LR: 0.000100, Loss: 0.0323146, Validation MAE: 31.0637968, Test MAE: 30.9755097, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 024, 0.000100,0.0310612,41.5012148,41.6053586, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 025, LR: 0.000100, Loss: 0.0309242, Validation MAE: 30.5921154, Test MAE: 30.5078129, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 026, LR: 0.000100, Loss: 0.0292677, Validation MAE: 29.3816787, Test MAE: 29.5061906, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 027, 0.000100,0.0292346,33.3305806,33.1334754, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 028, 0.000100,0.0274559,30.3799643,30.4433820, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 029, 0.000100,0.0273971,31.9561749,32.4371820, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 030, LR: 0.000100, Loss: 0.0266651, Validation MAE: 29.1564788, Test MAE: 29.2500453, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 031, LR: 0.000085, Loss: 0.0236591, Validation MAE: 27.8201594, Test MAE: 27.9425166, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 032, 0.000085,0.0236759,28.7889310,29.0576982, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 033, 0.000085,0.0229063,28.2765077,28.9318373, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 034, LR: 0.000085, Loss: 0.0221941, Validation MAE: 27.4677869, Test MAE: 27.6220881, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 035, LR: 0.000085, Loss: 0.0218178, Validation MAE: 25.6326372, Test MAE: 25.7082192, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 036, LR: 0.000085, Loss: 0.0215391, Validation MAE: 25.4639704, Test MAE: 25.8398956, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 037, 0.000085,0.0208284,26.8761566,27.0644365, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 038, 0.000085,0.0207233,30.7236583,30.6559984, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 039, LR: 0.000085, Loss: 0.0200037, Validation MAE: 25.3840380, Test MAE: 25.7397885, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 040, 0.000085,0.0196466,26.0006287,26.4103428, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 041, 0.000085,0.0190852,26.8959599,26.6810531, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 042, LR: 0.000085, Loss: 0.0185595, Validation MAE: 23.9463969, Test MAE: 24.1801920, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 043, 0.000085,0.0182309,25.8663513,26.6156846, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 044, 0.000085,0.0178044,27.2649085,27.4765976, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 045, 0.000085,0.0175707,24.5319537,25.0189284, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 046, 0.000085,0.0170354,24.8679611,25.0037113, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 047, LR: 0.000085, Loss: 0.0170000, Validation MAE: 23.3433684, Test MAE: 23.7669787, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 048, 0.000085,0.0182966,24.2605953,24.6552244, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 049, 0.000085,0.0160665,23.9520425,24.3320639, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 050, 0.000085,0.0160245,27.7261289,27.8849342, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 051, 0.000085,0.0156087,25.5219987,26.1928221, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 052, 0.000085,0.0154498,24.3042598,24.5138568, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 053, LR: 0.000085, Loss: 0.0149679, Validation MAE: 22.8425945, Test MAE: 23.5600109, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 054, 0.000085,0.0153673,23.7943684,24.0252644, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 055, 0.000085,0.0142798,24.9969328,25.5177044, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 056, LR: 0.000085, Loss: 0.0146855, Validation MAE: 22.6169169, Test MAE: 23.1093548, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 057, 0.000085,0.0138441,23.5746834,24.1848216, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 058, 0.000085,0.0139200,23.4357606,23.5491155, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 059, 0.000085,0.0140436,29.5885609,29.6615402, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 060, 0.000085,0.0131565,22.6584629,23.3352580, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 061, 0.000072,0.0117398,24.7916915,25.3184333, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 062, 0.000072,0.0120927,23.6050523,23.8360847, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 063, LR: 0.000072, Loss: 0.0118094, Validation MAE: 21.8066562, Test MAE: 22.4060409, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 064, 0.000072,0.0113939,23.1729137,23.7281156, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 065, 0.000072,0.0112345,23.8428390,24.7473366, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 066, 0.000072,0.0111271,23.3507636,24.1354905, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 067, 0.000072,0.0107392,21.9249740,22.5624008, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 068, 0.000072,0.0106602,22.9958581,23.2791720, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 069, LR: 0.000072, Loss: 0.0105281, Validation MAE: 21.7944323, Test MAE: 22.2158778, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 070, 0.000072,0.0101417,29.3705072,29.5902175, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 071, 0.000072,0.0103291,22.5697187,23.2232121, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 072, 0.000072,0.0097010,23.0991349,23.5728762, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 073, 0.000072,0.0097929,23.1986353,23.4938726, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 074, LR: 0.000072, Loss: 0.0096882, Validation MAE: 21.5946939, Test MAE: 21.9061232, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 075, 0.000072,0.0095489,22.2410796,22.7297331, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 076, 0.000072,0.0094845,21.7780164,22.2546728, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 077, 0.000072,0.0090825,22.2408864,22.7559741, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 078, 0.000072,0.0089536,23.5607527,24.1008053, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 079, LR: 0.000072, Loss: 0.0089186, Validation MAE: 21.5657095, Test MAE: 22.1710553, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 080, 0.000072,0.0088715,23.3999030,24.0059935, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 081, 0.000072,0.0084805,22.0364975,22.4511768, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 082, 0.000072,0.0085633,22.2880305,22.6732615, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 083, 0.000072,0.0083069,22.2293325,22.7720331, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 084, 0.000072,0.0081022,22.3038620,22.6499470, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 085, 0.000072,0.0079650,22.4053604,22.7970167, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 086, 0.000072,0.0081208,24.6803021,25.4009767, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 087, 0.000072,0.0078060,22.8177104,23.4390039, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 088, 0.000072,0.0078028,24.1507229,24.4398262, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 089, 0.000072,0.0077818,25.2291743,25.5776825, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 090, 0.000072,0.0076022,24.2619982,24.7493458, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 091, LR: 0.000061, Loss: 0.0066414, Validation MAE: 20.7219490, Test MAE: 20.9923801, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 092, 0.000061,0.0066887,21.1162334,21.4404249, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 093, 0.000061,0.0065397,21.4870420,21.8083413, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 094, 0.000061,0.0064725,21.2198403,21.6843968, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 095, 0.000061,0.0063282,22.0607843,22.4139516, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 096, 0.000061,0.0062451,21.0262271,21.5564790, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 097, LR: 0.000061, Loss: 0.0063171, Validation MAE: 20.4214001, Test MAE: 20.9556675, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 098, 0.000061,0.0059459,21.8806409,22.2871830, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 099, 0.000061,0.0060859,20.8968555,21.1509667, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 100, 0.000061,0.0059491,23.0527446,23.2444056, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 101, 0.000061,0.0057905,21.4021107,21.8034054, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 102, 0.000061,0.0058479,21.1052304,21.5508941, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 103, 0.000061,0.0057392,20.8657579,21.2664195, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 104, LR: 0.000061, Loss: 0.0057144, Validation MAE: 20.3676115, Test MAE: 20.8126906, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 105, 0.000061,0.0055235,20.5878905,21.1731297, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 106, 0.000061,0.0054077,20.6544095,21.0485742, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 107, 0.000061,0.0053739,21.4916855,22.0098366, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 108, 0.000061,0.0054039,22.2331999,22.5791610, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 109, 0.000061,0.0054249,20.6148003,21.0506662, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 110, 0.000061,0.0051201,20.5552942,20.9971937, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 111, 0.000061,0.0051513,20.8965290,21.2532243, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 112, 0.000061,0.0051120,20.4514296,20.8077316, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 113, LR: 0.000061, Loss: 0.0050320, Validation MAE: 20.3264869, Test MAE: 20.5879496, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 114, 0.000061,0.0049314,22.3545361,22.7886404, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 115, LR: 0.000061, Loss: 0.0050127, Validation MAE: 20.2861362, Test MAE: 20.6813056, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 116, 0.000061,0.0048584,20.7814406,21.2027766, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 117, 0.000061,0.0048342,20.3801965,20.7871009, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 118, 0.000061,0.0047072,21.8505791,22.3099906, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 119, 0.000061,0.0046125,21.6488516,22.0293877, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 120, 0.000061,0.0047877,20.8000200,21.3227165, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 121, 0.000052,0.0040883,20.9394322,21.4339516, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 122, 0.000052,0.0039569,24.8406686,25.0798027, nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
+Epoch: 123, LR: 0.000052, Loss: 0.0040874, Validation MAE: 19.8641196, Test MAE: 20.3021839, Cov: nan
+WARNING:root:NaN or Inf found in input tensor.
+WARNING:root:NaN or Inf found in input tensor.
