@@ -297,3 +297,75 @@ Epoch: 294, Train Loss: 0.0884520, Train Acc: 0.9693333, Test Acc: 0.8200000, Tr
 Epoch: 295, Train Loss: 0.1138487, Train Acc: 0.9662222, Test Acc: 0.8120000, Train Cov: 3095162.0000000
 Epoch: 296, Train Loss: 0.0912808, Train Acc: 0.9677778, Test Acc: 0.8080000, Train Cov: 3422067.0000000
 Epoch: 297, Train Loss: 0.0775457, Train Acc: 0.9691111, Test Acc: 0.8240000, Train Cov: 3666702.5000000
+Epoch: 298, Train Loss: 0.0811860, Train Acc: 0.9675556, Test Acc: 0.8020000, Train Cov: 3862611.2500000
+Epoch: 299, Train Loss: 0.0801800, Train Acc: 0.9680000, Test Acc: 0.8140000, Train Cov: 3730464.0000000
+Epoch: 300, Train Loss: 0.0734950, Train Acc: 0.9711111, Test Acc: 0.8220000, Train Cov: 3822363.5000000
+Epoch: 301, Train Loss: 0.0737590, Train Acc: 0.9680000, Test Acc: 0.8200000, Train Cov: 3925514.0000000
+Epoch: 302, Train Loss: 0.0752601, Train Acc: 0.9704444, Test Acc: 0.8100000, Train Cov: 3958187.7500000
+Epoch: 303, Train Loss: 0.0714009, Train Acc: 0.9700000, Test Acc: 0.8020000, Train Cov: 4174366.0000000
+Epoch: 304, Train Loss: 0.0750636, Train Acc: 0.9695556, Test Acc: 0.8180000, Train Cov: 3835556.0000000
+Epoch: 305, Train Loss: 0.0718269, Train Acc: 0.9697778, Test Acc: 0.8200000, Train Cov: 3708086.2500000
+Epoch: 306, Train Loss: 0.0714354, Train Acc: 0.9704444, Test Acc: 0.8240000, Train Cov: 3952954.0000000
+Epoch: 307, Train Loss: 0.0833868, Train Acc: 0.9688889, Test Acc: 0.8260000, Train Cov: 3429472.0000000
+Epoch: 308, Train Loss: 0.0821439, Train Acc: 0.9700000, Test Acc: 0.8200000, Train Cov: 3607585.2500000
+Epoch: 309, Train Loss: 0.0675154, Train Acc: 0.9711111, Test Acc: 0.8140000, Train Cov: 3696639.7500000
+Epoch: 310, Train Loss: 0.0695332, Train Acc: 0.9706667, Test Acc: 0.8180000, Train Cov: 3677847.7500000
+Epoch: 311, Train Loss: 0.0706797, Train Acc: 0.9704444, Test Acc: 0.8120000, Train Cov: 3669400.5000000
+Epoch: 312, Train Loss: 0.0897662, Train Acc: 0.9717778, Test Acc: 0.8020000, Train Cov: 3623445.7500000
+Epoch: 313, Train Loss: 0.0763874, Train Acc: 0.9717778, Test Acc: 0.8240000, Train Cov: 4070113.2500000
+Epoch: 314, Train Loss: 0.0696247, Train Acc: 0.9706667, Test Acc: 0.8180000, Train Cov: 4036109.7500000
+Epoch: 315, Train Loss: 0.0680196, Train Acc: 0.9717778, Test Acc: 0.8100000, Train Cov: 3852000.7500000
+Epoch: 316, Train Loss: 0.0655797, Train Acc: 0.9713333, Test Acc: 0.8160000, Train Cov: 3800551.0000000
+Epoch: 317, Train Loss: 0.0723284, Train Acc: 0.9695556, Test Acc: 0.8300000, Train Cov: 3790673.7500000
+Epoch: 318, Train Loss: 0.1126710, Train Acc: 0.9708889, Test Acc: 0.8240000, Train Cov: 3905879.2500000
+Epoch: 319, Train Loss: 0.0772080, Train Acc: 0.9708889, Test Acc: 0.8060000, Train Cov: 3902561.5000000
+Epoch: 320, Train Loss: 0.0674648, Train Acc: 0.9720000, Test Acc: 0.8200000, Train Cov: 4213176.0000000
+Epoch: 321, Train Loss: 0.0661220, Train Acc: 0.9717778, Test Acc: 0.8220000, Train Cov: 4213613.0000000
+Epoch: 322, Train Loss: 0.0654634, Train Acc: 0.9720000, Test Acc: 0.8160000, Train Cov: 4216856.5000000
+Epoch: 323, Train Loss: 0.0699625, Train Acc: 0.9720000, Test Acc: 0.8040000, Train Cov: 3974571.5000000
+Epoch: 324, Train Loss: 0.0631330, Train Acc: 0.9724444, Test Acc: 0.8060000, Train Cov: 3887506.2500000
+Epoch: 325, Train Loss: 0.0657551, Train Acc: 0.9724444, Test Acc: 0.8160000, Train Cov: 4286609.0000000
+Epoch: 326, Train Loss: 0.0667312, Train Acc: 0.9724444, Test Acc: 0.8120000, Train Cov: 3933785.2500000
+Epoch: 327, Train Loss: 0.0625611, Train Acc: 0.9728889, Test Acc: 0.8140000, Train Cov: 3774249.2500000
+Epoch: 328, Train Loss: 0.0641721, Train Acc: 0.9711111, Test Acc: 0.8080000, Train Cov: 3939118.2500000
+Epoch: 329, Train Loss: 0.0630670, Train Acc: 0.9717778, Test Acc: 0.8080000, Train Cov: 4277672.5000000
+Epoch: 330, Train Loss: 0.0663743, Train Acc: 0.9697778, Test Acc: 0.8120000, Train Cov: 4533165.0000000
+Epoch: 331, Train Loss: 0.0650060, Train Acc: 0.9724444, Test Acc: 0.8080000, Train Cov: 3969412.2500000
+Epoch: 332, Train Loss: 0.0674735, Train Acc: 0.9728889, Test Acc: 0.8140000, Train Cov: 3957220.2500000
+Epoch: 333, Train Loss: 0.0619766, Train Acc: 0.9728889, Test Acc: 0.8140000, Train Cov: 4171509.7500000
+Epoch: 334, Train Loss: 0.0636580, Train Acc: 0.9724444, Test Acc: 0.8180000, Train Cov: 3771531.7500000
+Epoch: 335, Train Loss: 0.0696281, Train Acc: 0.9724444, Test Acc: 0.7940000, Train Cov: 3543809.5000000
+Epoch: 336, Train Loss: 0.0872873, Train Acc: 0.9664444, Test Acc: 0.8160000, Train Cov: 3409744.2500000
+Epoch: 337, Train Loss: 0.0837641, Train Acc: 0.9717778, Test Acc: 0.8120000, Train Cov: 3247673.5000000
+Epoch: 338, Train Loss: 0.0806511, Train Acc: 0.9715556, Test Acc: 0.8280000, Train Cov: 3111820.0000000
+Epoch: 339, Train Loss: 0.0776545, Train Acc: 0.9726667, Test Acc: 0.8140000, Train Cov: 2811504.7500000
+Epoch: 340, Train Loss: 0.0669875, Train Acc: 0.9726667, Test Acc: 0.8140000, Train Cov: 3467303.2500000
+Epoch: 341, Train Loss: 0.0649501, Train Acc: 0.9728889, Test Acc: 0.8040000, Train Cov: 3484928.5000000
+Epoch: 342, Train Loss: 0.0671069, Train Acc: 0.9724444, Test Acc: 0.8080000, Train Cov: 3363852.0000000
+Epoch: 343, Train Loss: 0.0817245, Train Acc: 0.9720000, Test Acc: 0.8100000, Train Cov: 3746144.5000000
+Epoch: 344, Train Loss: 0.0670966, Train Acc: 0.9731111, Test Acc: 0.8080000, Train Cov: 3667486.0000000
+Epoch: 345, Train Loss: 0.0629976, Train Acc: 0.9726667, Test Acc: 0.8060000, Train Cov: 3763728.7500000
+Traceback (most recent call last):
+  File "./main.py", line 278, in <module>
+    main()
+  File "./main.py", line 274, in main
+    run_model(PcaNet, dataset, config=config)
+  File "./main.py", line 202, in run_model
+    config=config
+  File "./main.py", line 114, in run_given_fold
+    train_acc = test(train_loader, model)
+  File "./main.py", line 88, in test
+    output, _ = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/model.py", line 64, in forward
+    x, cov2d = conv(x, edge_index)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 91, in forward
+    out, cov_std = self.propagate(edge_index, x=x)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 97, in message
+    feature2d = torch.matmul(aggr_emb.unsqueeze(-1), xe.unsqueeze(-1).transpose(-1, -2)).squeeze(-1).view(-1, self.num_aggr * self.hidden)
+RuntimeError: CUDA out of memory. Tried to allocate 452.00 MiB (GPU 0; 15.75 GiB total capacity; 3.23 GiB already allocated; 395.62 MiB free; 4.91 GiB reserved in total by PyTorch)
