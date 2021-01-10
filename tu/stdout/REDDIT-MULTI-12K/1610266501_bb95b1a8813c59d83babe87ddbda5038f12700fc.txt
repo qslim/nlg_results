@@ -1,0 +1,39 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 777, 'num_workers': 1, 'cov_weight': 0, 'hyperparams': {'batch_size': 64, 'epochs': 901, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'e4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'bb95b1a8813c59d83babe87ddbda5038f12700fc', 'time_stamp': '1610266501', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=bb95b1a8813c59d83babe87ddbda5038f12700fc
+Epoch: 001, Train Loss: 2.9059267, Train Acc: 0.2173994, Test Acc: 0.2212909, Train Cov: 3963.1635742
+Epoch: 002, Train Loss: 2.0825851, Train Acc: 0.2326751, Test Acc: 0.2347024, Train Cov: 4464.4584961
+Epoch: 003, Train Loss: 1.9662028, Train Acc: 0.3582340, Test Acc: 0.3478625, Train Cov: 4895.1166992
+Traceback (most recent call last):
+  File "./main.py", line 277, in <module>
+    main()
+  File "./main.py", line 273, in main
+    run_model(PcaNet, dataset, config=config)
+  File "./main.py", line 201, in run_model
+    config=config
+  File "./main.py", line 114, in run_given_fold
+    train_acc = test(train_loader, model)
+  File "./main.py", line 88, in test
+    output, _ = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/model.py", line 61, in forward
+    x, cov2d = conv(x, edge_index)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 88, in forward
+    out, cov_std = self.propagate(edge_index, x=x)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 277, in propagate
+    out = self.update(out, **update_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/conv.py", line 107, in update
+    return self.fea_mlp(self.BN(feature2d)), cov2d
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/functional.py", line 1610, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 66.00 MiB (GPU 0; 15.75 GiB total capacity; 4.71 GiB already allocated; 9.62 MiB free; 5.90 GiB reserved in total by PyTorch)
