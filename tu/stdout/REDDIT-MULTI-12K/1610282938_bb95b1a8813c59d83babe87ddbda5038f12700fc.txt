@@ -1,0 +1,2 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 777, 'num_workers': 1, 'cov_weight': 0.001, 'hyperparams': {'batch_size': 32, 'epochs': 901, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'e4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'bb95b1a8813c59d83babe87ddbda5038f12700fc', 'time_stamp': '1610282938', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=bb95b1a8813c59d83babe87ddbda5038f12700fc

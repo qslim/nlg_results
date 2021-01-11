@@ -1,0 +1,8 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 777, 'num_workers': 1, 'cov_weight': 0.001, 'hyperparams': {'batch_size': 32, 'epochs': 901, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'e4', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': 'bb95b1a8813c59d83babe87ddbda5038f12700fc', 'time_stamp': '1610283042', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=bb95b1a8813c59d83babe87ddbda5038f12700fc
+Epoch: 001, Train Loss: 2.9915075, Train Acc: 0.2896796, Test Acc: 0.3109807, Train Cov: 113.3265991
+Epoch: 002, Train Loss: 2.2223286, Train Acc: 0.3016021, Test Acc: 0.3009220, Train Cov: 40.0763741
+Epoch: 003, Train Loss: 2.1892338, Train Acc: 0.3058867, Test Acc: 0.3302598, Train Cov: 27.5716305
+Epoch: 004, Train Loss: 2.1241824, Train Acc: 0.3044896, Test Acc: 0.3252305, Train Cov: 15.3212175
+Epoch: 005, Train Loss: 2.0756193, Train Acc: 0.3301043, Test Acc: 0.3428332, Train Cov: 31.5834923
+Epoch: 006, Train Loss: 2.0169880, Train Acc: 0.3621461, Test Acc: 0.3688181, Train Cov: 14.4687920

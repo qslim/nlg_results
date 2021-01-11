@@ -1,0 +1,2 @@
+{'dataset_name': 'PROTEINS', 'seed': 666, 'num_workers': 1, 'cov_weight': 0.1, 'hyperparams': {'batch_size': 64, 'epochs': 901, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 64, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'g', 'dropout': 0.5, 'variants': {'BN': 'Y'}}, 'commit_id': '2ceb3d035efe519de861aee344e426f68c91b0bc', 'time_stamp': '1610296370', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=PROTEINS, COMMIT_ID=2ceb3d035efe519de861aee344e426f68c91b0bc
