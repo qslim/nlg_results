@@ -1,0 +1,16 @@
+{'dataset_name': 'COLLAB', 'seed': 777, 'num_workers': 1, 'cov_weight': 0.1, 'hyperparams': {'batch_size': 32, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'variants': {'BN': 'Y', 'exps': 4, 'aggr': 'add'}}, 'commit_id': '33798e393e87ab141df96b3145b879947fa766ff', 'time_stamp': '1612172486', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=33798e393e87ab141df96b3145b879947fa766ff
+Traceback (most recent call last):
+  File "./main.py", line 281, in <module>
+    main()
+  File "./main.py", line 277, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 201, in run_model
+    config=config
+  File "./main.py", line 102, in run_given_fold
+    model = net(dataset, config=config.architecture)
+  File "/space/github_private/gnnzoo/tu/model.py", line 103, in __init__
+    self.convs.append(PenaltyConv(config.variants))
+  File "/space/github_private/gnnzoo/tu/conv.py", line 264, in __init__
+    Linear(config.hidden, config.hidden * config.exps),
+AttributeError: 'EasyDict' object has no attribute 'hidden'

@@ -1,0 +1,9 @@
+{'dataset_name': 'COLLAB', 'seed': 123, 'num_workers': 1, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 32, 'epochs': 1001, 'learning_rate': 0.002, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 3, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'BN': 'Y', 'exps': 4, 'aggr': 'add'}, 'commit_id': 'cb50f5127d624b228122f3228dc74c7bb39c37c7', 'time_stamp': '1612327402', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=cb50f5127d624b228122f3228dc74c7bb39c37c7
+Epoch: 001, Train Loss: 11.8260638, Train Acc: 0.6706667, Test Acc: 0.6720000, Train Cov: 886.0703125
+Epoch: 002, Train Loss: 2.6782944, Train Acc: 0.6786667, Test Acc: 0.6540000, Train Cov: 158.0358124
+Epoch: 003, Train Loss: 1.9405728, Train Acc: 0.6951111, Test Acc: 0.6740000, Train Cov: 96.9618530
+Epoch: 004, Train Loss: 1.2726380, Train Acc: 0.6964444, Test Acc: 0.7020000, Train Cov: 36.9488564
+Epoch: 005, Train Loss: 1.3911475, Train Acc: 0.6495556, Test Acc: 0.6520000, Train Cov: 53.2146378
+Epoch: 006, Train Loss: 0.9843275, Train Acc: 0.7042222, Test Acc: 0.7140000, Train Cov: 22.8876324
+Epoch: 007, Train Loss: 1.1840707, Train Acc: 0.6762222, Test Acc: 0.6960000, Train Cov: 20.3923779

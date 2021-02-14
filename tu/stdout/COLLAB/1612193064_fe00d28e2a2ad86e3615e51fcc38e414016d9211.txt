@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "./main.py", line 10, in <module>
+    from model import PcaNet, PenaltyNet
+  File "/space/github_private/gnnzoo/tu/model.py", line 6, in <module>
+    from conv import PcaExpBConv, PcaComBConv, PcaExpAConv, PcaComAConv, GinConv, PenaltyConv
+  File "/space/github_private/gnnzoo/tu/conv.py", line 270
+    Linear(config.hidden * config.exps, config.hidden),
+         ^
+SyntaxError: invalid syntax
