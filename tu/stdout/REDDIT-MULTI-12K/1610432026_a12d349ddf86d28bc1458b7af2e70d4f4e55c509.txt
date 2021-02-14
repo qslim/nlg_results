@@ -1,0 +1,16 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 777, 'num_workers': 1, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'SM', 'dropout': 0.5, 'variants': {'BN': 'N'}}, 'commit_id': 'a12d349ddf86d28bc1458b7af2e70d4f4e55c509', 'time_stamp': '1610432026', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=a12d349ddf86d28bc1458b7af2e70d4f4e55c509
+Traceback (most recent call last):
+  File "./main.py", line 264, in <module>
+    main()
+  File "./main.py", line 258, in main
+    run_model(SMG, dataset, config=config)
+  File "./main.py", line 186, in run_model
+    config=config
+  File "./main.py", line 91, in run_given_fold
+    model = net(dataset, config=config.architecture)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/model.py", line 96, in __init__
+    self.masks.append(WeightConv(config.hidden, 1))
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/tu/soft_mask.py", line 44, in __init__
+    Tanh()
+NameError: name 'Tanh' is not defined

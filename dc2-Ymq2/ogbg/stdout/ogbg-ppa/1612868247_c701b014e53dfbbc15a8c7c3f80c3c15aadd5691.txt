@@ -1,0 +1,22 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 666, 'num_workers': 4, 'cov_weight': 0.01, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 30, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'exps': 4, 'leak': 0.2, 'aggr': 'add', 'BN': 'N'}, 'commit_id': 'c701b014e53dfbbc15a8c7c3f80c3c15aadd5691', 'time_stamp': '1612868247', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 242, in <module>
+    main()
+  File "./main.py", line 182, in main
+    train_loss, train_cov = train(model, device, train_loader, optimizer, multicls_criterion, config)
+  File "./main.py", line 30, in train
+    pred, cov2d = model(batch)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/model.py", line 106, in forward
+    x, cov2d = conv(x, edge_index, edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 150, in forward
+    x = self.propagate(edge_index, x=x, edge_attr=edge_attr)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 263, in propagate
+    out = self.message(**msg_kwargs)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 165, in message
+    return x_j + edge_attr
+RuntimeError: The size of tensor a (1024) must match the size of tensor b (256) at non-singleton dimension 1

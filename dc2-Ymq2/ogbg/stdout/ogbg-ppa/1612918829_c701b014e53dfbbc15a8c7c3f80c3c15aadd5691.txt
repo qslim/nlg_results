@@ -1,0 +1,37 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 666, 'num_workers': 4, 'cov_weight': 0, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 30, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'exps': 4, 'leak': 0.2, 'aggr': 'add', 'BN': 'N'}, 'commit_id': 'c701b014e53dfbbc15a8c7c3f80c3c15aadd5691', 'time_stamp': '1612918829', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Epoch 1 training...
+Traceback (most recent call last):
+  File "./main.py", line 242, in <module>
+    main()
+  File "./main.py", line 182, in main
+    train_loss, train_cov = train(model, device, train_loader, optimizer, multicls_criterion, config)
+  File "./main.py", line 40, in train
+    loss.backward()
+  File "/opt/conda/lib/python3.6/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/lib/python3.6/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA error: CUBLAS_STATUS_ALLOC_FAILED when calling `cublasCreate(handle)` (createCublasHandle at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:8)
+frame #0: c10::Error::Error(c10::SourceLocation, std::string const&) + 0x46 (0x2aafdbc4f536 in /opt/conda/lib/python3.6/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0xf56135 (0x2aafa0136135 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: at::cuda::getCurrentCUDABlasHandle() + 0x94c (0x2aafa0136f1c in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xf4b831 (0x2aafa012b831 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x13f589d (0x2aafa05d589d in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: THCudaTensor_addmm + 0x5c (0x2aafa05df44c in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1041c58 (0x2aafa0221c58 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0xf65018 (0x2aafa0145018 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x10c2780 (0x2aaf91506780 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0x2c9b47e (0x2aaf930df47e in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #10: <unknown function> + 0x10c2780 (0x2aaf91506780 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #11: at::Tensor c10::Dispatcher::callUnboxed<at::Tensor, at::Tensor const&, at::Tensor const&>(c10::OperatorHandle const&, at::Tensor const&, at::Tensor const&) const + 0xb3 (0x2aaf8f38dda3 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+frame #12: <unknown function> + 0x28ac327 (0x2aaf92cf0327 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: torch::autograd::generated::AddmmBackward::apply(std::vector<at::Tensor, std::allocator<at::Tensor> >&&) + 0x134 (0x2aaf92d2aff4 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2d89705 (0x2aaf931cd705 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: torch::autograd::Engine::evaluate_function(std::shared_ptr<torch::autograd::GraphTask>&, torch::autograd::Node*, torch::autograd::InputBuffer&) + 0x16f3 (0x2aaf931caa03 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: torch::autograd::Engine::thread_main(std::shared_ptr<torch::autograd::GraphTask> const&, bool) + 0x3d2 (0x2aaf931cb7e2 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: torch::autograd::Engine::thread_init(int) + 0x39 (0x2aaf931c3e59 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: torch::autograd::python::PythonEngine::thread_init(int) + 0x38 (0x2aaf8f6515f8 in /opt/conda/lib/python3.6/site-packages/torch/lib/libtorch_python.so)
+frame #19: <unknown function> + 0xbd66f (0x2aaf8ea5b66f in /usr/lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #20: <unknown function> + 0x76db (0x2aaf8c8026db in /lib/x86_64-linux-gnu/libpthread.so.0)
+frame #21: clone + 0x3f (0x2aaf8cb3b88f in /lib/x86_64-linux-gnu/libc.so.6)
+
