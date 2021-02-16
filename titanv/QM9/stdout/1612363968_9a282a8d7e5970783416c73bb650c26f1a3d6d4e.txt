@@ -1,0 +1,5 @@
+{'dataset_name': 'QM9', 'seed': 777, 'target': 5, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 64, 'epochs': 601, 'learning_rate': 0.0001, 'step_size': 30, 'decay_rate': 0.85}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'exps': 1, 'leak': 0.2, 'aggr': 'add'}, 'commit_id': '9a282a8d7e5970783416c73bb650c26f1a3d6d4e', 'time_stamp': '1612363968', 'directory': '../../nlg_results/titanv/QM9/board/'}
+Traceback (most recent call last):
+  File "./main.py", line 112, in <module>
+    + 'C' + str(config.cov_weight)
+AttributeError: 'EasyDict' object has no attribute 'variants'

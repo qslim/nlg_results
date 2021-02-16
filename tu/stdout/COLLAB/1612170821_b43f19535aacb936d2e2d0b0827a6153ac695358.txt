@@ -1,0 +1,14 @@
+{'dataset_name': 'COLLAB', 'seed': 777, 'num_workers': 1, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 32, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'exps': 4, 'variants': {'BN': 'Y', 'aggr': 'add'}}, 'commit_id': 'b43f19535aacb936d2e2d0b0827a6153ac695358', 'time_stamp': '1612170821', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=b43f19535aacb936d2e2d0b0827a6153ac695358
+Traceback (most recent call last):
+  File "./main.py", line 281, in <module>
+    main()
+  File "./main.py", line 277, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 201, in run_model
+    config=config
+  File "./main.py", line 102, in run_given_fold
+    model = net(dataset, config=config.architecture)
+  File "/space/github_private/gnnzoo/tu/model.py", line 109, in __init__
+    self.convs.append(PenaltyConv(config.hidden, config.variants))
+TypeError: __init__() takes 2 positional arguments but 3 were given

@@ -1,0 +1,2 @@
+{'dataset_name': 'COLLAB', 'seed': 123, 'num_workers': 1, 'cov_weight': 0, 'hyperparams': {'batch_size': 32, 'epochs': 1001, 'learning_rate': 0.002, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 3, 'hidden': 128, 'pooling': 'add', 'JK': 'last', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'BN': 'Y', 'exps': 4, 'aggr': 'add'}, 'commit_id': 'cb50f5127d624b228122f3228dc74c7bb39c37c7', 'time_stamp': '1612327585', 'directory': '../../nlg_results/tu/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=cb50f5127d624b228122f3228dc74c7bb39c37c7
