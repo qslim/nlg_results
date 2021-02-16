@@ -1,0 +1,11 @@
+{'dataset_name': 'ogbg-ppa', 'seed': 666, 'num_workers': 4, 'cov_weight': 0.001, 'feature': 'full', 'hyperparams': {'batch_size': 32, 'epochs': 801, 'learning_rate': 0.0005, 'step_size': 30, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'add', 'JK': 'cat', 'nonlinear_conv': 'penalty', 'dropout': 0.5, 'exps': 2, 'nonlinear': 'LeakyR0.2', 'aggr': 'add', 'BN': 'N'}, 'commit_id': '0c79ace21b60a5802301d6691a1f418fb52badbb', 'time_stamp': '1613267994', 'directory': '../../../nlg_results/dc2-Ymq2/ogbg/board/'}
+Traceback (most recent call last):
+  File "./main.py", line 243, in <module>
+    main()
+  File "./main.py", line 112, in main
+    model = net(config.architecture, num_class=dataset.num_classes).to(device)
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/model.py", line 84, in __init__
+    self.convs.append(PenaltyConv(config))
+  File "/GPUFS/dlut_bcyin_1/ymq/space/github_private/gnnzoo/ogbg/ppa/conv.py", line 134, in __init__
+    LeakyReLU(int(config.nonlinear[6:])))
+ValueError: invalid literal for int() with base 10: '0.2'
