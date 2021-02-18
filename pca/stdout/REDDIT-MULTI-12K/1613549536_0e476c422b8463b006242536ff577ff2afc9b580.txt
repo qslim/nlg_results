@@ -1,0 +1,37 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 666, 'num_workers': 2, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 64, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'Tanh', 'aggr': 'add', 'BN': 'Y'}, 'commit_id': '0e476c422b8463b006242536ff577ff2afc9b580', 'time_stamp': '1613549536', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=0e476c422b8463b006242536ff577ff2afc9b580
+Epoch: 001, Train Loss: 26.9996916, Train Acc: 0.2829732, Test Acc: 0.2774518, Train Cov: 13.6815195
+Epoch: 002, Train Loss: 5.3551520, Train Acc: 0.3353204, Test Acc: 0.3059514, Train Cov: 9.6100912
+Epoch: 003, Train Loss: 2.3072364, Train Acc: 0.3506893, Test Acc: 0.3285834, Train Cov: 6.8975234
+Epoch: 004, Train Loss: 2.2358915, Train Acc: 0.3388599, Test Acc: 0.3134954, Train Cov: 5.4147635
+Epoch: 005, Train Loss: 2.1922862, Train Acc: 0.3781669, Test Acc: 0.3436714, Train Cov: 4.9367623
+Epoch: 006, Train Loss: 2.0979157, Train Acc: 0.4053651, Test Acc: 0.3880972, Train Cov: 4.0100398
+Epoch: 007, Train Loss: 2.0349384, Train Acc: 0.3141766, Test Acc: 0.2841576, Train Cov: 3.3283637
+Epoch: 008, Train Loss: 1.9527088, Train Acc: 0.3772355, Test Acc: 0.3436714, Train Cov: 2.7350645
+Epoch: 009, Train Loss: 1.9708730, Train Acc: 0.3187407, Test Acc: 0.2866723, Train Cov: 2.6052344
+Epoch: 010, Train Loss: 2.0574432, Train Acc: 0.2211252, Test Acc: 0.2372171, Train Cov: 3.1615810
+Epoch: 011, Train Loss: 2.1138801, Train Acc: 0.3606557, Test Acc: 0.3277452, Train Cov: 3.3897336
+Epoch: 012, Train Loss: 1.9534135, Train Acc: 0.3918592, Test Acc: 0.3654652, Train Cov: 2.3333385
+Epoch: 013, Train Loss: 1.9394218, Train Acc: 0.3440760, Test Acc: 0.3042749, Train Cov: 1.9372324
+Epoch: 014, Train Loss: 1.9421694, Train Acc: 0.3376490, Test Acc: 0.3310981, Train Cov: 2.0026112
+Epoch: 015, Train Loss: 1.9226807, Train Acc: 0.3728577, Test Acc: 0.3361274, Train Cov: 1.8115895
+Epoch: 016, Train Loss: 1.9824969, Train Acc: 0.2984352, Test Acc: 0.2707460, Train Cov: 2.1511009
+Epoch: 017, Train Loss: 2.0667471, Train Acc: 0.2017511, Test Acc: 0.1751886, Train Cov: 3.1757846
+Epoch: 018, Train Loss: 2.1663534, Train Acc: 0.2727273, Test Acc: 0.2548198, Train Cov: 4.6695333
+Epoch: 019, Train Loss: 2.0859044, Train Acc: 0.2654620, Test Acc: 0.2296731, Train Cov: 4.5374880
+Epoch: 020, Train Loss: 2.0264436, Train Acc: 0.3672690, Test Acc: 0.3369656, Train Cov: 2.9970911
+Epoch: 021, Train Loss: 2.0124863, Train Acc: 0.3273100, Test Acc: 0.2967309, Train Cov: 2.6122344
+Epoch: 022, Train Loss: 1.9777785, Train Acc: 0.2866058, Test Acc: 0.2380553, Train Cov: 2.2329199
+Epoch: 023, Train Loss: 2.1093680, Train Acc: 0.3328055, Test Acc: 0.3084661, Train Cov: 3.4652877
+Epoch: 024, Train Loss: 2.0032654, Train Acc: 0.3379285, Test Acc: 0.3176865, Train Cov: 2.1358628
+Epoch: 025, Train Loss: 2.0129869, Train Acc: 0.3618666, Test Acc: 0.3285834, Train Cov: 1.9861722
+Epoch: 026, Train Loss: 2.0409684, Train Acc: 0.3432377, Test Acc: 0.3277452, Train Cov: 1.9453979
+Epoch: 027, Train Loss: 2.0154036, Train Acc: 0.3359724, Test Acc: 0.3310981, Train Cov: 2.0594342
+Epoch: 028, Train Loss: 1.9860271, Train Acc: 0.3071908, Test Acc: 0.3042749, Train Cov: 1.9293853
+Epoch: 029, Train Loss: 1.9591818, Train Acc: 0.3556259, Test Acc: 0.3428332, Train Cov: 1.7075777
+Epoch: 030, Train Loss: 1.9561983, Train Acc: 0.3437034, Test Acc: 0.3059514, Train Cov: 1.5897400
+Epoch: 031, Train Loss: 2.0604844, Train Acc: 0.1684054, Test Acc: 0.1366303, Train Cov: 2.7582221
+Epoch: 032, Train Loss: 2.1975933, Train Acc: 0.2818554, Test Acc: 0.2749371, Train Cov: 4.3634286
+Epoch: 033, Train Loss: 2.1254890, Train Acc: 0.3368107, Test Acc: 0.3067896, Train Cov: 2.7227201
+Epoch: 034, Train Loss: 2.0835725, Train Acc: 0.2942437, Test Acc: 0.2816429, Train Cov: 2.0185950
+Epoch: 035, Train Loss: 2.0575886, Train Acc: 0.1881520, Test Acc: 0.1751886, Train Cov: 1.6821414

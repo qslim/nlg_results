@@ -1,0 +1,18 @@
+{'dataset_name': 'P388', 'seed': 666, 'num_workers': 2, 'cov_weight': 0.1, 'hyperparams': {'batch_size': 128, 'epochs': 1001, 'learning_rate': 0.005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'LeakyR0.2', 'aggr': 'mean', 'BN': 'N'}, 'commit_id': 'ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f', 'time_stamp': '1613474206', 'directory': '../../nlg_results/pca/board/'}
+Downloading https://www.chrsmrrs.com/graphkerneldatasets/P388.zip
+Extracting /space/github_private/gnnzoo/tu/data/P388/P388/P388.zip
+Processing...
+Done!
+-------- FOLD0 DATASET=P388, COMMIT_ID=ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f
+Epoch: 001, Train Loss: 0.4761185, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 1.6857733
+Epoch: 002, Train Loss: 0.2235795, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0478300
+Epoch: 003, Train Loss: 0.2136703, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0043485
+Epoch: 004, Train Loss: 0.2146061, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0118737
+Epoch: 005, Train Loss: 0.2132457, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0007844
+Epoch: 006, Train Loss: 0.2132162, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0001013
+Epoch: 007, Train Loss: 0.2132014, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0000188
+Epoch: 008, Train Loss: 0.2131897, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0000257
+Epoch: 009, Train Loss: 0.2132031, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0000301
+Epoch: 010, Train Loss: 0.2132004, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0002989
+Epoch: 011, Train Loss: 0.2193035, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0258310
+Epoch: 012, Train Loss: 0.2217671, Train Acc: 0.9449416, Test Acc: 0.9414176, Train Cov: 0.0403451

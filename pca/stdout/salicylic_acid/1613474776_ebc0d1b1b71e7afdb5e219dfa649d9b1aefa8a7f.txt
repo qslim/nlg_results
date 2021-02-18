@@ -1,0 +1,23 @@
+{'dataset_name': 'FIRSTMM_DB', 'seed': 666, 'num_workers': 2, 'cov_weight': 0, 'hyperparams': {'batch_size': 128, 'epochs': 1001, 'learning_rate': 0.005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'LeakyR0.2', 'aggr': 'mean', 'BN': 'N'}, 'commit_id': 'ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f', 'time_stamp': '1613474776', 'directory': '../../nlg_results/pca/board/'}
+Downloading https://www.chrsmrrs.com/graphkerneldatasets/FIRSTMM_DB.zip
+Extracting /space/github_private/gnnzoo/tu/data/FIRSTMM_DB/FIRSTMM_DB/FIRSTMM_DB.zip
+Processing...
+Done!
+Traceback (most recent call last):
+  File "./main.py", line 282, in <module>
+    main()
+  File "./main.py", line 278, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 180, in run_model
+    zip(*k_fold(dataset, 10, config.get('seed', 12345)))):
+  File "./main.py", line 140, in k_fold
+    for _, idx in skf.split(torch.zeros(len(dataset)), dataset.data.y):
+  File "/opt/conda/lib/python3.6/site-packages/sklearn/model_selection/_split.py", line 335, in split
+    for train, test in super().split(X, y, groups):
+  File "/opt/conda/lib/python3.6/site-packages/sklearn/model_selection/_split.py", line 80, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+  File "/opt/conda/lib/python3.6/site-packages/sklearn/model_selection/_split.py", line 692, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+  File "/opt/conda/lib/python3.6/site-packages/sklearn/model_selection/_split.py", line 663, in _make_test_folds
+    % (self.n_splits))
+ValueError: n_splits=10 cannot be greater than the number of members in each class.

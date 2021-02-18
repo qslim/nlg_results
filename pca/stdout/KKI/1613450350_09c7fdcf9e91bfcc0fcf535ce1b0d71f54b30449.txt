@@ -1,0 +1,9 @@
+{'dataset_name': 'KKI', 'seed': 666, 'num_workers': 1, 'cov_weight': 0, 'hyperparams': {'batch_size': 32, 'epochs': 1001, 'learning_rate': 0.002, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 20, 'hidden': 64, 'pooling': 'add', 'JK': 'last', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'LeakyR0.2', 'aggr': 'add', 'BN': 'N'}, 'commit_id': '09c7fdcf9e91bfcc0fcf535ce1b0d71f54b30449', 'time_stamp': '1613450350', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=KKI, COMMIT_ID=09c7fdcf9e91bfcc0fcf535ce1b0d71f54b30449
+Epoch: 001, Train Loss: 2.5371985, Train Acc: 0.5405405, Test Acc: 0.5555556, Train Cov: 0.6408584
+Epoch: 002, Train Loss: 1.2667878, Train Acc: 0.5540541, Test Acc: 0.5555556, Train Cov: 0.6008567
+Epoch: 003, Train Loss: 1.4133737, Train Acc: 0.5405405, Test Acc: 0.5555556, Train Cov: 0.6752750
+Epoch: 004, Train Loss: 2.4109528, Train Acc: 0.5405405, Test Acc: 0.5555556, Train Cov: 0.6098590
+Epoch: 005, Train Loss: 3.5867734, Train Acc: 0.4459459, Test Acc: 0.4444444, Train Cov: 0.6182244
+Epoch: 006, Train Loss: 1.9684648, Train Acc: 0.4324324, Test Acc: 0.4444444, Train Cov: 0.6529660
+Epoch: 007, Train Loss: 2.0334249, Train Acc: 0.4459459, Test Acc: 0.4444444, Train Cov: 0.6739444

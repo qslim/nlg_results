@@ -1,0 +1,27 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 666, 'num_workers': 2, 'cov_weight': 0, 'hyperparams': {'batch_size': 64, 'epochs': 1001, 'learning_rate': 0.1, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'Tanh', 'aggr': 'add', 'BN': 'N'}, 'commit_id': '0e476c422b8463b006242536ff577ff2afc9b580', 'time_stamp': '1613548375', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=0e476c422b8463b006242536ff577ff2afc9b580
+Epoch: 001, Train Loss: 376.6571430, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.7398977
+Epoch: 002, Train Loss: 2.3042227, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6779633
+Epoch: 003, Train Loss: 2.3043958, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6871510
+Epoch: 004, Train Loss: 2.3043397, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6823359
+Epoch: 005, Train Loss: 2.3047583, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6830325
+Epoch: 006, Train Loss: 2.3051931, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6744418
+Epoch: 007, Train Loss: 2.3041004, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6851211
+Epoch: 008, Train Loss: 2.3045599, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6825638
+Epoch: 009, Train Loss: 2.3066520, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6831093
+Epoch: 010, Train Loss: 2.3060103, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6758962
+Epoch: 011, Train Loss: 2.3049708, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6839623
+Epoch: 012, Train Loss: 2.3052977, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6851649
+Epoch: 013, Train Loss: 2.3051337, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6786013
+Epoch: 014, Train Loss: 2.3070608, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6836243
+Epoch: 015, Train Loss: 2.3056194, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6835141
+Epoch: 016, Train Loss: 2.3038853, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6762228
+Epoch: 017, Train Loss: 2.3059925, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6778851
+Epoch: 018, Train Loss: 2.3066744, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6847405
+Epoch: 019, Train Loss: 2.3063182, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6757302
+Epoch: 020, Train Loss: 2.3050898, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6876407
+Epoch: 021, Train Loss: 2.3060745, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6818547
+Epoch: 022, Train Loss: 2.3045282, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6768875
+Epoch: 023, Train Loss: 2.3049215, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6831665
+Epoch: 024, Train Loss: 2.3075136, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6800566
+Epoch: 025, Train Loss: 2.3051737, Train Acc: 0.2196349, Test Acc: 0.1961442, Train Cov: 5.6882749

@@ -1,0 +1,22 @@
+{'dataset_name': 'DBLP_v1', 'seed': 666, 'num_workers': 2, 'cov_weight': 0, 'hyperparams': {'batch_size': 128, 'epochs': 1001, 'learning_rate': 0.005, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'LeakyR0.2', 'aggr': 'mean', 'BN': 'N'}, 'commit_id': 'ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f', 'time_stamp': '1613474831', 'directory': '../../nlg_results/pca/board/'}
+Downloading https://www.chrsmrrs.com/graphkerneldatasets/DBLP_v1.zip
+Extracting /space/github_private/gnnzoo/tu/data/DBLP_v1/DBLP_v1/DBLP_v1.zip
+Processing...
+Done!
+-------- FOLD0 DATASET=DBLP_v1, COMMIT_ID=ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f
+Epoch: 001, Train Loss: 0.3143213, Train Acc: 0.9662479, Test Acc: 0.9316547, Train Cov: 4.3824830
+Epoch: 002, Train Loss: 0.1091257, Train Acc: 0.9852085, Test Acc: 0.9342240, Train Cov: 4.5590758
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/multiprocessing/resource_sharer.py", line 142, in _serve
+    with self._listener.accept() as conn:
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 456, in accept
+    answer_challenge(c, self._authkey)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 732, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer

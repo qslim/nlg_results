@@ -1,0 +1,6 @@
+{'dataset_name': 'REDDIT-MULTI-5K', 'seed': 666, 'num_workers': 2, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 64, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'add', 'JK': 'cat', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'LeakyR0.2', 'aggr': 'mean', 'BN': 'N'}, 'commit_id': 'ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f', 'time_stamp': '1613475331', 'directory': '../../nlg_results/pca/board/'}
+Downloading https://www.chrsmrrs.com/graphkerneldatasets/REDDIT-MULTI-5K.zip
+Extracting /space/github_private/gnnzoo/tu/data/REDDIT-MULTI-5K/REDDIT-MULTI-5K/REDDIT-MULTI-5K.zip
+Processing...
+Done!
+-------- FOLD0 DATASET=REDDIT-MULTI-5K, COMMIT_ID=ebc0d1b1b71e7afdb5e219dfa649d9b1aefa8a7f
