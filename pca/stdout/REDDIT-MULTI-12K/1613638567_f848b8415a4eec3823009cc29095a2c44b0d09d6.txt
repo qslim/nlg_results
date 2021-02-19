@@ -1,0 +1,16 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 666, 'num_workers': 2, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 64, 'epochs': 2001, 'learning_rate': 0.001, 'step_size': 100, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'JK': 'C', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'nonlinear': 'Tanh', 'aggr': 'add', 'BN': 'Y'}, 'commit_id': 'f848b8415a4eec3823009cc29095a2c44b0d09d6', 'time_stamp': '1613638567', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=f848b8415a4eec3823009cc29095a2c44b0d09d6
+Traceback (most recent call last):
+  File "./main.py", line 282, in <module>
+    main()
+  File "./main.py", line 278, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 202, in run_model
+    config=config
+  File "./main.py", line 102, in run_given_fold
+    model = net(dataset, config=config.architecture)
+  File "/space/github_private/gnnzoo/tu/model.py", line 101, in __init__
+    self.JK = JumpingKnowledge(config.JK)
+  File "../utils/jumping_knowledge.py", line 9, in __init__
+    assert self.mode in ['C', 'S', 'M', 'L']
+AssertionError
