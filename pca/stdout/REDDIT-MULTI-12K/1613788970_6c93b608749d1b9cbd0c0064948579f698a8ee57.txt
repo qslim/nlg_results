@@ -1,0 +1,16 @@
+{'dataset_name': 'REDDIT-MULTI-12K', 'seed': 666, 'num_workers': 2, 'cov_weight': 0, 'hyperparams': {'batch_size': 64, 'epochs': 1201, 'learning_rate': 0.0001, 'step_size': 100, 'decay_rate': 0.8}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'S', 'JK': 'C', 'method': 'penalty', 'dropout': 0.5, 'exps': 2, 'exp_nonlinear': 'Tanh', 'mlp_nonlinear': 'ReLU', 'aggr': 'add', 'BN': 'Y'}, 'commit_id': '6c93b608749d1b9cbd0c0064948579f698a8ee57', 'time_stamp': '1613788970', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=REDDIT-MULTI-12K, COMMIT_ID=6c93b608749d1b9cbd0c0064948579f698a8ee57
+Traceback (most recent call last):
+  File "./main.py", line 283, in <module>
+    main()
+  File "./main.py", line 279, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 203, in run_model
+    config=config
+  File "./main.py", line 102, in run_given_fold
+    model = net(dataset, config=config.architecture)
+  File "/space/github_private/gnnzoo/tu/model.py", line 99, in __init__
+    self.convs.append(PenaltyConv(config))
+  File "/space/github_private/gnnzoo/tu/conv.py", line 264, in __init__
+    if config.nonlinear == 'Tanh':
+AttributeError: 'EasyDict' object has no attribute 'nonlinear'
