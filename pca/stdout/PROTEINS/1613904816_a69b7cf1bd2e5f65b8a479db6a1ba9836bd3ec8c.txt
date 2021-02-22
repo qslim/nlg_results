@@ -1,0 +1,129 @@
+{'dataset_name': 'PROTEINS', 'seed': 111, 'num_workers': 1, 'cov_weight': 0, 'hyperparams': {'batch_size': 128, 'epochs': 2001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 4, 'hidden': 128, 'pooling': 'S', 'JK': 'C', 'method': 'penalty', 'dropout': 0.5, 'exps': 2, 'exp_nonlinear': 'Tanh', 'mlp_nonlinear': 'ReLU', 'aggr': 'add'}, 'commit_id': 'a69b7cf1bd2e5f65b8a479db6a1ba9836bd3ec8c', 'time_stamp': '1613904816', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=PROTEINS, COMMIT_ID=a69b7cf1bd2e5f65b8a479db6a1ba9836bd3ec8c
+Epoch: 001, Train Loss: 0.7040150, Train Acc: 0.4365634, Test Acc: 0.4732143, Train Cov: 4.2078810
+Epoch: 002, Train Loss: 0.6189073, Train Acc: 0.6393606, Test Acc: 0.5357143, Train Cov: 4.1876745
+Epoch: 003, Train Loss: 0.6033664, Train Acc: 0.6573427, Test Acc: 0.5357143, Train Cov: 4.1370521
+Epoch: 004, Train Loss: 0.6064946, Train Acc: 0.6573427, Test Acc: 0.5625000, Train Cov: 4.0969515
+Epoch: 005, Train Loss: 0.5808721, Train Acc: 0.6663337, Test Acc: 0.5892857, Train Cov: 4.0926299
+Epoch: 006, Train Loss: 0.5843454, Train Acc: 0.6873127, Test Acc: 0.5982143, Train Cov: 4.0564871
+Epoch: 007, Train Loss: 0.5945393, Train Acc: 0.7152847, Test Acc: 0.6517857, Train Cov: 4.0326152
+Epoch: 008, Train Loss: 0.5833194, Train Acc: 0.7082917, Test Acc: 0.6964286, Train Cov: 4.0207376
+Epoch: 009, Train Loss: 0.5810465, Train Acc: 0.7022977, Test Acc: 0.6428571, Train Cov: 4.0200830
+Epoch: 010, Train Loss: 0.5769288, Train Acc: 0.7102897, Test Acc: 0.6428571, Train Cov: 3.9940314
+Epoch: 011, Train Loss: 0.5627723, Train Acc: 0.7082917, Test Acc: 0.6250000, Train Cov: 3.9855158
+Epoch: 012, Train Loss: 0.5740567, Train Acc: 0.7262737, Test Acc: 0.6071429, Train Cov: 3.9716167
+Epoch: 013, Train Loss: 0.5642087, Train Acc: 0.7142857, Test Acc: 0.6160714, Train Cov: 3.9417062
+Epoch: 014, Train Loss: 0.5547218, Train Acc: 0.7352647, Test Acc: 0.7053571, Train Cov: 3.9166107
+Epoch: 015, Train Loss: 0.5498486, Train Acc: 0.7342657, Test Acc: 0.6785714, Train Cov: 3.9096165
+Epoch: 016, Train Loss: 0.5480770, Train Acc: 0.7232767, Test Acc: 0.6428571, Train Cov: 3.9010122
+Epoch: 017, Train Loss: 0.5487094, Train Acc: 0.7162837, Test Acc: 0.6428571, Train Cov: 3.8971620
+Epoch: 018, Train Loss: 0.5538035, Train Acc: 0.7202797, Test Acc: 0.6785714, Train Cov: 3.8878355
+Epoch: 019, Train Loss: 0.5402069, Train Acc: 0.7422577, Test Acc: 0.6964286, Train Cov: 3.8673131
+Epoch: 020, Train Loss: 0.5455760, Train Acc: 0.7062937, Test Acc: 0.6339286, Train Cov: 3.8791938
+Epoch: 021, Train Loss: 0.5503514, Train Acc: 0.7452547, Test Acc: 0.7142857, Train Cov: 3.8800797
+Epoch: 022, Train Loss: 0.5440442, Train Acc: 0.6883117, Test Acc: 0.6785714, Train Cov: 3.8800724
+Epoch: 023, Train Loss: 0.5454359, Train Acc: 0.7582418, Test Acc: 0.6607143, Train Cov: 3.8573847
+Epoch: 024, Train Loss: 0.5367372, Train Acc: 0.6903097, Test Acc: 0.5982143, Train Cov: 3.8353019
+Epoch: 025, Train Loss: 0.5366665, Train Acc: 0.7112887, Test Acc: 0.5982143, Train Cov: 3.8367863
+Epoch: 026, Train Loss: 0.5419947, Train Acc: 0.7372627, Test Acc: 0.6160714, Train Cov: 3.8052466
+Epoch: 027, Train Loss: 0.5368602, Train Acc: 0.7452547, Test Acc: 0.6071429, Train Cov: 3.7814741
+Epoch: 028, Train Loss: 0.5336356, Train Acc: 0.7202797, Test Acc: 0.6785714, Train Cov: 3.7844555
+Epoch: 029, Train Loss: 0.5378233, Train Acc: 0.7252747, Test Acc: 0.6160714, Train Cov: 3.7569642
+Epoch: 030, Train Loss: 0.5319520, Train Acc: 0.7192807, Test Acc: 0.6696429, Train Cov: 3.7496536
+Epoch: 031, Train Loss: 0.5293375, Train Acc: 0.7472527, Test Acc: 0.6517857, Train Cov: 3.7493873
+Epoch: 032, Train Loss: 0.5243622, Train Acc: 0.7542458, Test Acc: 0.6607143, Train Cov: 3.7528903
+Epoch: 033, Train Loss: 0.5262193, Train Acc: 0.7212787, Test Acc: 0.6696429, Train Cov: 3.7509232
+Epoch: 034, Train Loss: 0.5302046, Train Acc: 0.7542458, Test Acc: 0.6696429, Train Cov: 3.7450573
+Epoch: 035, Train Loss: 0.5431458, Train Acc: 0.7122877, Test Acc: 0.6250000, Train Cov: 3.7210734
+Epoch: 036, Train Loss: 0.5378751, Train Acc: 0.7292707, Test Acc: 0.7142857, Train Cov: 3.7008204
+Epoch: 037, Train Loss: 0.5330771, Train Acc: 0.7022977, Test Acc: 0.6250000, Train Cov: 3.7122710
+Epoch: 038, Train Loss: 0.5320211, Train Acc: 0.7212787, Test Acc: 0.6250000, Train Cov: 3.7083366
+Epoch: 039, Train Loss: 0.5276004, Train Acc: 0.7472527, Test Acc: 0.6785714, Train Cov: 3.6680551
+Epoch: 040, Train Loss: 0.5241051, Train Acc: 0.7522478, Test Acc: 0.7321429, Train Cov: 3.6665628
+Epoch: 041, Train Loss: 0.5119291, Train Acc: 0.7412587, Test Acc: 0.6785714, Train Cov: 3.6728849
+Epoch: 042, Train Loss: 0.5135418, Train Acc: 0.7662338, Test Acc: 0.7142857, Train Cov: 3.6967156
+Epoch: 043, Train Loss: 0.5218432, Train Acc: 0.7772228, Test Acc: 0.6875000, Train Cov: 3.6756306
+Epoch: 044, Train Loss: 0.5111082, Train Acc: 0.7602398, Test Acc: 0.6875000, Train Cov: 3.6529472
+Epoch: 045, Train Loss: 0.5127541, Train Acc: 0.7662338, Test Acc: 0.7232143, Train Cov: 3.6563594
+Epoch: 046, Train Loss: 0.4969399, Train Acc: 0.7342657, Test Acc: 0.6339286, Train Cov: 3.6301177
+Epoch: 047, Train Loss: 0.5036837, Train Acc: 0.7282717, Test Acc: 0.6696429, Train Cov: 3.6204593
+Epoch: 048, Train Loss: 0.5014120, Train Acc: 0.7292707, Test Acc: 0.6160714, Train Cov: 3.6293743
+Epoch: 049, Train Loss: 0.5082631, Train Acc: 0.7612388, Test Acc: 0.6696429, Train Cov: 3.6296034
+Epoch: 050, Train Loss: 0.4972339, Train Acc: 0.7712288, Test Acc: 0.6785714, Train Cov: 3.5986943
+Epoch: 051, Train Loss: 0.5034859, Train Acc: 0.7832168, Test Acc: 0.6785714, Train Cov: 3.5891588
+Epoch: 052, Train Loss: 0.4902905, Train Acc: 0.7752248, Test Acc: 0.6964286, Train Cov: 3.6168325
+Epoch: 053, Train Loss: 0.4821867, Train Acc: 0.7772228, Test Acc: 0.7053571, Train Cov: 3.6046557
+Epoch: 054, Train Loss: 0.4718047, Train Acc: 0.7912088, Test Acc: 0.6607143, Train Cov: 3.5892577
+Epoch: 055, Train Loss: 0.4751038, Train Acc: 0.7732268, Test Acc: 0.6875000, Train Cov: 3.5870979
+Epoch: 056, Train Loss: 0.4792621, Train Acc: 0.7652348, Test Acc: 0.6607143, Train Cov: 3.5944469
+Epoch: 057, Train Loss: 0.4775332, Train Acc: 0.7462537, Test Acc: 0.6607143, Train Cov: 3.5923197
+Epoch: 058, Train Loss: 0.4741834, Train Acc: 0.7632368, Test Acc: 0.7142857, Train Cov: 3.5924089
+Epoch: 059, Train Loss: 0.4620694, Train Acc: 0.7822178, Test Acc: 0.6964286, Train Cov: 3.5673938
+Epoch: 060, Train Loss: 0.4828878, Train Acc: 0.7522478, Test Acc: 0.7053571, Train Cov: 3.5490217
+Epoch: 061, Train Loss: 0.4829418, Train Acc: 0.7682318, Test Acc: 0.7053571, Train Cov: 3.5144422
+Epoch: 062, Train Loss: 0.4658607, Train Acc: 0.7942058, Test Acc: 0.6964286, Train Cov: 3.4954040
+Epoch: 063, Train Loss: 0.4440009, Train Acc: 0.8011988, Test Acc: 0.7142857, Train Cov: 3.5173359
+Epoch: 064, Train Loss: 0.4549782, Train Acc: 0.7682318, Test Acc: 0.6428571, Train Cov: 3.5553455
+Epoch: 065, Train Loss: 0.4468396, Train Acc: 0.7512488, Test Acc: 0.6428571, Train Cov: 3.5753155
+Epoch: 066, Train Loss: 0.4630850, Train Acc: 0.7942058, Test Acc: 0.7053571, Train Cov: 3.5903687
+Epoch: 067, Train Loss: 0.4357812, Train Acc: 0.7792208, Test Acc: 0.6696429, Train Cov: 3.5618105
+Epoch: 068, Train Loss: 0.4405609, Train Acc: 0.7892108, Test Acc: 0.6696429, Train Cov: 3.5531175
+Epoch: 069, Train Loss: 0.4568314, Train Acc: 0.8211788, Test Acc: 0.6785714, Train Cov: 3.5531251
+Epoch: 070, Train Loss: 0.4515739, Train Acc: 0.7922078, Test Acc: 0.6785714, Train Cov: 3.5414133
+Epoch: 071, Train Loss: 0.4414375, Train Acc: 0.7522478, Test Acc: 0.6696429, Train Cov: 3.5501821
+Epoch: 072, Train Loss: 0.4456036, Train Acc: 0.7692308, Test Acc: 0.6339286, Train Cov: 3.5593266
+Epoch: 073, Train Loss: 0.4650233, Train Acc: 0.7892108, Test Acc: 0.6517857, Train Cov: 3.5703914
+Epoch: 074, Train Loss: 0.4681768, Train Acc: 0.7932068, Test Acc: 0.6696429, Train Cov: 3.5440471
+Epoch: 075, Train Loss: 0.4568914, Train Acc: 0.7912088, Test Acc: 0.6875000, Train Cov: 3.5399377
+Epoch: 076, Train Loss: 0.4283506, Train Acc: 0.7952048, Test Acc: 0.6785714, Train Cov: 3.5227180
+Epoch: 077, Train Loss: 0.4277407, Train Acc: 0.7642358, Test Acc: 0.6428571, Train Cov: 3.5231383
+Epoch: 078, Train Loss: 0.4389849, Train Acc: 0.7882118, Test Acc: 0.6339286, Train Cov: 3.5315931
+Epoch: 079, Train Loss: 0.4550116, Train Acc: 0.7732268, Test Acc: 0.6250000, Train Cov: 3.5346501
+Epoch: 080, Train Loss: 0.4666337, Train Acc: 0.7532468, Test Acc: 0.7053571, Train Cov: 3.5019410
+Epoch: 081, Train Loss: 0.4593793, Train Acc: 0.8031968, Test Acc: 0.6339286, Train Cov: 3.4635236
+Epoch: 082, Train Loss: 0.4355318, Train Acc: 0.8091908, Test Acc: 0.6875000, Train Cov: 3.4327888
+Epoch: 083, Train Loss: 0.4364758, Train Acc: 0.7942058, Test Acc: 0.6250000, Train Cov: 3.4397633
+Epoch: 084, Train Loss: 0.4206231, Train Acc: 0.8211788, Test Acc: 0.6785714, Train Cov: 3.4648399
+Epoch: 085, Train Loss: 0.4201242, Train Acc: 0.7682318, Test Acc: 0.6696429, Train Cov: 3.4880910
+Epoch: 086, Train Loss: 0.4175136, Train Acc: 0.8211788, Test Acc: 0.6696429, Train Cov: 3.4997954
+Epoch: 087, Train Loss: 0.4092403, Train Acc: 0.8151848, Test Acc: 0.6517857, Train Cov: 3.4965010
+Epoch: 088, Train Loss: 0.3923551, Train Acc: 0.8071928, Test Acc: 0.6517857, Train Cov: 3.5056362
+Epoch: 089, Train Loss: 0.3812660, Train Acc: 0.8241758, Test Acc: 0.6696429, Train Cov: 3.5031431
+Epoch: 090, Train Loss: 0.3931108, Train Acc: 0.8161838, Test Acc: 0.6160714, Train Cov: 3.5215673
+Epoch: 091, Train Loss: 0.3629291, Train Acc: 0.7872128, Test Acc: 0.6607143, Train Cov: 3.5142040
+Epoch: 092, Train Loss: 0.4061114, Train Acc: 0.7862138, Test Acc: 0.6696429, Train Cov: 3.4540920
+Epoch: 093, Train Loss: 0.3939880, Train Acc: 0.7462537, Test Acc: 0.6428571, Train Cov: 3.4716239
+Epoch: 094, Train Loss: 0.3986293, Train Acc: 0.7722278, Test Acc: 0.7142857, Train Cov: 3.4638619
+Epoch: 095, Train Loss: 0.3727696, Train Acc: 0.7942058, Test Acc: 0.6607143, Train Cov: 3.4636827
+Epoch: 096, Train Loss: 0.3559996, Train Acc: 0.8361638, Test Acc: 0.6696429, Train Cov: 3.4798129
+Epoch: 097, Train Loss: 0.3790931, Train Acc: 0.8521479, Test Acc: 0.6696429, Train Cov: 3.4758718
+Epoch: 098, Train Loss: 0.3669460, Train Acc: 0.8461538, Test Acc: 0.6428571, Train Cov: 3.4527268
+Epoch: 099, Train Loss: 0.3558826, Train Acc: 0.8661339, Test Acc: 0.6607143, Train Cov: 3.4533515
+Epoch: 100, Train Loss: 0.3367217, Train Acc: 0.8501499, Test Acc: 0.6696429, Train Cov: 3.4653471
+Epoch: 101, Train Loss: 0.3358732, Train Acc: 0.8721279, Test Acc: 0.6607143, Train Cov: 3.4982955
+Epoch: 102, Train Loss: 0.3375004, Train Acc: 0.8381618, Test Acc: 0.6071429, Train Cov: 3.4775703
+Epoch: 103, Train Loss: 0.3411934, Train Acc: 0.8111888, Test Acc: 0.5982143, Train Cov: 3.4866896
+Epoch: 104, Train Loss: 0.3651604, Train Acc: 0.7962038, Test Acc: 0.6428571, Train Cov: 3.4839909
+Epoch: 105, Train Loss: 0.3563432, Train Acc: 0.8301698, Test Acc: 0.6517857, Train Cov: 3.4228346
+Epoch: 106, Train Loss: 0.3349935, Train Acc: 0.8291708, Test Acc: 0.6250000, Train Cov: 3.4213262
+Epoch: 107, Train Loss: 0.3293376, Train Acc: 0.8381618, Test Acc: 0.6339286, Train Cov: 3.4638178
+Epoch: 108, Train Loss: 0.3252946, Train Acc: 0.8471528, Test Acc: 0.7142857, Train Cov: 3.4565520
+Epoch: 109, Train Loss: 0.3309457, Train Acc: 0.8131868, Test Acc: 0.6607143, Train Cov: 3.4548976
+Epoch: 110, Train Loss: 0.3173886, Train Acc: 0.8351648, Test Acc: 0.6785714, Train Cov: 3.4503472
+Epoch: 111, Train Loss: 0.3194312, Train Acc: 0.8841159, Test Acc: 0.6607143, Train Cov: 3.4629750
+Epoch: 112, Train Loss: 0.3037573, Train Acc: 0.8831169, Test Acc: 0.6428571, Train Cov: 3.4623902
+Epoch: 113, Train Loss: 0.2905901, Train Acc: 0.8881119, Test Acc: 0.6517857, Train Cov: 3.4638121
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/multiprocessing/resource_sharer.py", line 142, in _serve
+    with self._listener.accept() as conn:
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 455, in accept
+    deliver_challenge(c, self._authkey)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 722, in deliver_challenge
+    response = connection.recv_bytes(256)        # reject large message
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/opt/conda/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
