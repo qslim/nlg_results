@@ -1,0 +1,59 @@
+{'dataset_name': 'COLLAB', 'seed': 789, 'num_workers': 4, 'cov_weight': 0, 'hyperparams': {'batch_size': 64, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 3, 'hidden': 128, 'pooling': 'S', 'JK': 'C', 'method': 'penalty', 'dropout': 0.5, 'exps': 2, 'exp_nonlinear': 'Tanh', 'exp_bn': 'N', 'mlp_n': 2, 'mlp_nonlinear': 'ReLU', 'aggr': 'add'}, 'commit_id': '0bb16684179168ffeda005d30b682e2aa720ba4e', 'time_stamp': '1614432636', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=0bb16684179168ffeda005d30b682e2aa720ba4e
+Epoch: 001, Train Loss: 0.8028575, Train Acc: 0.6713333, Test Acc: 0.6440000, Train Cov: 602.3901978
+Epoch: 002, Train Loss: 0.7411185, Train Acc: 0.7020000, Test Acc: 0.6900000, Train Cov: 595.0572510
+Epoch: 003, Train Loss: 0.7074514, Train Acc: 0.7295556, Test Acc: 0.7000000, Train Cov: 581.3178711
+Epoch: 004, Train Loss: 0.6612952, Train Acc: 0.7337778, Test Acc: 0.7040000, Train Cov: 531.9439087
+Epoch: 005, Train Loss: 0.6279515, Train Acc: 0.7486667, Test Acc: 0.7140000, Train Cov: 570.5084229
+Epoch: 006, Train Loss: 0.6231762, Train Acc: 0.7144444, Test Acc: 0.6760000, Train Cov: 510.7453308
+Epoch: 007, Train Loss: 0.5946852, Train Acc: 0.7053333, Test Acc: 0.6760000, Train Cov: 492.3602905
+Epoch: 008, Train Loss: 0.5858155, Train Acc: 0.7440000, Test Acc: 0.7360000, Train Cov: 525.6488647
+Epoch: 009, Train Loss: 0.5868970, Train Acc: 0.7364444, Test Acc: 0.7180000, Train Cov: 491.1291199
+Epoch: 010, Train Loss: 0.5775699, Train Acc: 0.7466667, Test Acc: 0.7280000, Train Cov: 486.4195557
+Epoch: 011, Train Loss: 0.5669452, Train Acc: 0.7613333, Test Acc: 0.7360000, Train Cov: 522.7650757
+Epoch: 012, Train Loss: 0.5582294, Train Acc: 0.7544444, Test Acc: 0.7240000, Train Cov: 461.6772766
+Epoch: 013, Train Loss: 0.5819213, Train Acc: 0.7335556, Test Acc: 0.6940000, Train Cov: 485.8287354
+Epoch: 014, Train Loss: 0.5871538, Train Acc: 0.6911111, Test Acc: 0.6840000, Train Cov: 446.8198547
+Epoch: 015, Train Loss: 0.5619094, Train Acc: 0.7508889, Test Acc: 0.7220000, Train Cov: 429.7391052
+Epoch: 016, Train Loss: 0.5703953, Train Acc: 0.7044444, Test Acc: 0.6860000, Train Cov: 412.1042480
+Epoch: 017, Train Loss: 0.5767740, Train Acc: 0.7346667, Test Acc: 0.6920000, Train Cov: 475.7422180
+Epoch: 018, Train Loss: 0.5672209, Train Acc: 0.7317778, Test Acc: 0.6800000, Train Cov: 456.1387024
+Epoch: 019, Train Loss: 0.5901613, Train Acc: 0.7337778, Test Acc: 0.7140000, Train Cov: 465.4107971
+Epoch: 020, Train Loss: 0.5690782, Train Acc: 0.7377778, Test Acc: 0.7160000, Train Cov: 443.8427734
+Epoch: 021, Train Loss: 0.5686664, Train Acc: 0.7506667, Test Acc: 0.7180000, Train Cov: 418.8210754
+Epoch: 022, Train Loss: 0.5785359, Train Acc: 0.7364444, Test Acc: 0.7160000, Train Cov: 415.1713867
+Epoch: 023, Train Loss: 0.5648262, Train Acc: 0.7446667, Test Acc: 0.7060000, Train Cov: 432.7339478
+Epoch: 024, Train Loss: 0.5562394, Train Acc: 0.7400000, Test Acc: 0.7300000, Train Cov: 374.7604675
+Epoch: 025, Train Loss: 0.5721685, Train Acc: 0.7564444, Test Acc: 0.7180000, Train Cov: 336.6506958
+Traceback (most recent call last):
+  File "./main.py", line 279, in <module>
+    main()
+  File "./main.py", line 275, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 205, in run_model
+    config=config
+  File "./main.py", line 114, in run_given_fold
+    train_acc = test(train_loader, model)
+  File "./main.py", line 88, in test
+    output, _ = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/tu/model.py", line 123, in forward
+    x, cov2d = conv(x, edge_index)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/tu/conv.py", line 305, in forward
+    x = self.propagate(edge_index, x=x)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 237, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/tu/conv.py", line 320, in message
+    return self.exps(torch.cat([x_i, x_j], dim=-1))
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/activation.py", line 318, in forward
+    return torch.tanh(input)
+RuntimeError: CUDA out of memory. Tried to allocate 624.00 MiB (GPU 0; 11.78 GiB total capacity; 7.07 GiB already allocated; 345.69 MiB free; 10.35 GiB reserved in total by PyTorch)
