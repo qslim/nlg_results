@@ -1,0 +1,26 @@
+{'dataset_name': 'COLLAB', 'num_workers': 4, 'cov_weight': 0.01, 'hyperparams': {'batch_size': 64, 'epochs': 1001, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.75}, 'architecture': {'layers': 3, 'hidden': 256, 'pooling': 'S', 'JK': 'C', 'method': 'penalty', 'dropout': 0.5, 'exps': 1, 'exp_nonlinear': 'Tanh', 'exp_bn': 'N', 'mlp_n': 1, 'mlp_nonlinear': 'Tanh', 'aggr': 'add'}, 'commit_id': '0bb16684179168ffeda005d30b682e2aa720ba4e', 'time_stamp': '1614740630', 'directory': '../../nlg_results/pca/board/'}
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=0bb16684179168ffeda005d30b682e2aa720ba4e
+Traceback (most recent call last):
+  File "./main.py", line 279, in <module>
+    main()
+  File "./main.py", line 275, in main
+    run_model(net, dataset, config=config)
+  File "./main.py", line 205, in run_model
+    config=config
+  File "./main.py", line 114, in run_given_fold
+    train_acc = test(train_loader, model)
+  File "./main.py", line 88, in test
+    output, _ = model(data)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/tu/model.py", line 123, in forward
+    x, cov2d = conv(x, edge_index)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/space/github_private/gnnzoo/tu/conv.py", line 305, in forward
+    x = self.propagate(edge_index, x=x)
+  File "/opt/conda/lib/python3.6/site-packages/torch_geometric/nn/conv/message_passing.py", line 237, in propagate
+    out = self.message(**msg_kwargs)
+  File "/space/github_private/gnnzoo/tu/conv.py", line 320, in message
+    return self.exps(torch.cat([x_i, x_j], dim=-1))
+RuntimeError: CUDA out of memory. Tried to allocate 844.00 MiB (GPU 0; 11.78 GiB total capacity; 6.88 GiB already allocated; 633.69 MiB free; 10.07 GiB reserved in total by PyTorch)
