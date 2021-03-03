@@ -10036,3 +10036,26 @@ Epoch: 979, Train Loss: 0.2714173, Train Acc: 0.9060000, Test Acc: 0.8220000, Tr
 Epoch: 980, Train Loss: 0.2621802, Train Acc: 0.9086667, Test Acc: 0.8300000, Train Cov: 0.0000000
 Epoch: 981, Train Loss: 0.2697964, Train Acc: 0.9053333, Test Acc: 0.8240000, Train Cov: 0.0000000
 Epoch: 982, Train Loss: 0.2650228, Train Acc: 0.9084444, Test Acc: 0.8260000, Train Cov: 0.0006156
+Epoch: 983, Train Loss: 0.2641341, Train Acc: 0.9086667, Test Acc: 0.8280000, Train Cov: 0.0005342
+Epoch: 984, Train Loss: 0.2702068, Train Acc: 0.9095556, Test Acc: 0.8340000, Train Cov: 0.0007546
+Epoch: 985, Train Loss: 0.2627414, Train Acc: 0.9075556, Test Acc: 0.8220000, Train Cov: 0.0000000
+Epoch: 986, Train Loss: 0.2650023, Train Acc: 0.9073333, Test Acc: 0.8360000, Train Cov: 0.0000000
+Epoch: 987, Train Loss: 0.2614649, Train Acc: 0.9066667, Test Acc: 0.8420000, Train Cov: 0.0000000
+Epoch: 988, Train Loss: 0.2571482, Train Acc: 0.9111111, Test Acc: 0.8260000, Train Cov: 0.0001945
+Epoch: 989, Train Loss: 0.2727927, Train Acc: 0.9071111, Test Acc: 0.8260000, Train Cov: 0.0000000
+Epoch: 990, Train Loss: 0.2632724, Train Acc: 0.9082222, Test Acc: 0.8300000, Train Cov: 0.0000041
+Epoch: 991, Train Loss: 0.2689140, Train Acc: 0.9068889, Test Acc: 0.8220000, Train Cov: 0.0003586
+Epoch: 992, Train Loss: 0.2644350, Train Acc: 0.9068889, Test Acc: 0.8280000, Train Cov: 0.0000000
+Epoch: 993, Train Loss: 0.2664635, Train Acc: 0.9055556, Test Acc: 0.8240000, Train Cov: 0.0000000
+Epoch: 994, Train Loss: 0.2637179, Train Acc: 0.9093333, Test Acc: 0.8280000, Train Cov: 0.0029047
+Epoch: 995, Train Loss: 0.2592801, Train Acc: 0.9077778, Test Acc: 0.8380000, Train Cov: 0.0002262
+Epoch: 996, Train Loss: 0.2645612, Train Acc: 0.9093333, Test Acc: 0.8220000, Train Cov: 0.0010981
+Epoch: 997, Train Loss: 0.2671604, Train Acc: 0.9086667, Test Acc: 0.8220000, Train Cov: 0.0000000
+Epoch: 998, Train Loss: 0.2668607, Train Acc: 0.9082222, Test Acc: 0.8300000, Train Cov: 0.0000009
+Epoch: 999, Train Loss: 0.2605945, Train Acc: 0.9135556, Test Acc: 0.8280000, Train Cov: 0.0000000
+Epoch: 1000, Train Loss: 0.2634352, Train Acc: 0.9111111, Test Acc: 0.8360000, Train Cov: 0.0000016
+--------
+Best Test Acc:   0.8112_0.016399999999999963, Epoch: 738
+Best Train Loss: 0.26029486183855266_0.031194296551289143
+Best Train Acc:  0.9063333333333334_0.014813490681565894
+FOLD10, COLLAB, 1614476337/0bb1668_TanhN_ReLU2_add_SC_3_128_0.5_0.001_50_0.75_B32S789W4C1.0, BT=0.8112_0.016399999999999963, BE=738, ID=0bb16684179168ffeda005d30b682e2aa720ba4e
